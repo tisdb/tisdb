@@ -143,7 +143,7 @@ Wprowadzam koncepcje "Grafów Cisowskiego" - są nadrzędnym meta-modelem (nadzb
 
 ### ♠️ Aksjomat 12 (Multigrafowość Warstwy Relacyjnej)
 
-- Między tymi samymi dwiema strefami w tym samym hiperkonektorze może istnieć wiele niezależnych, równoległych przepływów tego samego typu.Między tymi samymi dwiema strefami w tym samym hiperkonektorze może istnieć wiele niezależnych, równoległych przepływów tego samego typu.
+- Między tymi samymi dwiema strefami w tym samym hiperkonektorze może istnieć wiele niezależnych, równoległych przepływów tego samego typu.
 
 - Funkcja $\pi_F$ nie musi być iniekcją. Dwa odrębne obiekty przepływu $f_1, f_2 \in F_h$ ($f_1 \neq f_2$) mogą posiadać identyczny obraz $\pi_F(f_1) = \pi_F(f_2)$, co tworzy strukturę multigrafu.
 
