@@ -52,7 +52,7 @@ Wprowadzam koncepcje "Grafów Cisowskiego" - są nadrzędnym meta-modelem (nadzb
 
 - Autonomiczne połączenia relacyjne zachodzące wyłącznie pomiędzy strefami należącymi do tego samego hiperkonektora.
 
-- Autonomiczne instancje relacji zachodzące wyłącznie pomiędzy strefami należącymi do tej samej hiperkrawędzi ($Z_h \times Z_h$). Przepływ $f \in F_h$ nie jest zbiorem par, lecz unikalnym obiektem wskazywanym przez funkcję przydziału $\pi_F$, niosącym atomowy typ orientacji $T = \{\text{sym}, \text{dir}, \text{bidir}\}$.
+- Autonomiczne instancje relacji zachodzące wyłącznie pomiędzy strefami należącymi do tej samej hiperkrawędzi ($Z_h \times Z_h$). Przepływ $f \in F_h$ nie jest zbiorem par, lecz unikalnym obiektem wskazywanym przez funkcję przydziału $\pi_F$, niosącym atomowy typ orientacji $T = \{\mathrm{sym}, \mathrm{dir}, \mathrm{bidir}\}$.
 
 ## Aksjomaty Systemu
 
@@ -67,14 +67,14 @@ Wprowadzam koncepcje "Grafów Cisowskiego" - są nadrzędnym meta-modelem (nadzb
 - W systemie istnieją hiperkonektory ($H$), które są całkowicie odrębne od węzłów ($N$). Razem z węzłami tworzą pełne uniwersum obiektów ($U$).
 
 - Istnieje zbiór hiperkonektorów $H$. Zbiory $N$ oraz $H$ są rozłączne i tworzą uniwersum obiektów:
-   $$U = N \sqcup H \quad \text{gdzie} \quad N \cap H = \emptyset$$ .
+   $U = N \sqcup H \quad \mathrm{gdzie} \quad N \cap H = \emptyset$ .
 
 ### ♥️ Aksjomat 3 (Lokalność i Rozłączność Stref)
 
 - Każdy hiperkonektor ma swój własny, unikalny zestaw stref (portów). Jedna strefa nie może należeć do dwóch hiperkonektorów naraz.
 
 - Każdemu hiperkonektorowi $h \in H$ przypisana jest lokalna rodzina stref $Z_h$. Strefy należące do różnych hiperkonektorów są ściśle rozłączne:
-   $$\forall h_1, h_2 \in H \quad (h_1 \neq h_2 \implies Z_{h_1} \cap Z_{h_2} = \emptyset)$$ .
+   $\forall h_1, h_2 \in H \quad (h_1 \neq h_2 \implies Z_{h_1} \cap Z_{h_2} = \emptyset)$ .
 
 ### ♥️ Aksjomat 4 (Globalne Uniwersum Stref)
 
@@ -104,7 +104,7 @@ Wprowadzam koncepcje "Grafów Cisowskiego" - są nadrzędnym meta-modelem (nadzb
 - Każdy hiperkonektor ma przypisaną strukturę złożoną ze stref i przepływów. Może posiadać zero stref (byt bezportowy) lub zero przepływów.
 
 - Struktura dowolnego hiperkonektora $h \in H$ jest określona przez funkcję przydziału:
-   $$\sigma: H \to \mathcal{P}(Z) \times \mathcal{P}(F) \quad \text{gdzie} \quad \sigma(h) = (Z_h, F_h)$$
+   $$\sigma: H \to \mathcal{P}(Z) \times \mathcal{P}(F) \quad \mathrm{gdzie} \quad \sigma(h) = (Z_h, F_h)$$
    Dopuszczalne są liczności $\vert{}Z_h\vert{} \ge 0$ oraz $\vert{}F_h\vert{} \ge 0$. Stan $\vert{}Z_h\vert{} = 0$ definiuje byt bezportowy (placeholder).
 
 ### ♥️ Aksjomat 8 (Zawartość Stref i Współdzielenie Zawartości)
@@ -119,25 +119,25 @@ Wprowadzam koncepcje "Grafów Cisowskiego" - są nadrzędnym meta-modelem (nadzb
 
 - Hiperkonektory mogą zawierać w swoich strefach inne hiperkonektory, tworząc strukturę zagnieżdżoną. Zagnieżdżanie nie może jednak tworzyć cykli (samozawierania) ani nieskończonej głębokości.
 
-- Relację bezpośredniego zagnieżdżenia $\mathcal{R}_{\text{contain}} \subseteq U \times U$ definiuje się jako:
-   $$(h, u) \in \mathcal{R}_{\text{contain}} \iff h \in H \land \exists z \in Z_h \bigl(u \in \mu_Z(z)\bigr)$$
-   Relacja $\mathcal{R}_{\text{contain}}$ jest dobrze ufundowana (well-founded), co wyklucza istnienie nieskończonych łańcuchów zagnieżdżenia $u_0 \ni u_1 \ni u_2 \dots$. Ponadto jej domknięcie przechodnie $\mathcal{R}_{\text{contain}}^+$ jest ściśle irrefleksywne:
-   $$\forall u \in U \quad (u, u) \notin \mathcal{R}_{\text{contain}}^+$$
+- Relację bezpośredniego zagnieżdżenia $\mathcal{R}_{\mathrm{contain}} \subseteq U \times U$ definiuje się jako:
+   $$(h, u) \in \mathcal{R}_{\mathrm{contain}} \iff h \in H \land \exists z \in Z_h \bigl(u \in \mu_Z(z)\bigr)$$
+   Relacja $\mathcal{R}_{\mathrm{contain}}$ jest dobrze ufundowana (well-founded), co wyklucza istnienie nieskończonych łańcuchów zagnieżdżenia $u_0 \ni u_1 \ni u_2 \dots$. Ponadto jej domknięcie przechodnie $\mathcal{R}_{\mathrm{contain}}^+$ jest ściśle irrefleksywne:
+   $$\forall u \in U \quad (u, u) \notin \mathcal{R}_{\mathrm{contain}}^+$$
 
 ### ♠️ Aksjomat 10 (Instancja i Typowanie Przepływu)
 
 - Każdy przepływ wewnątrz hiperkonektora łączy dwie jego strefy i posiada jeden z trzech typów połączenia: nieskierowane (—), skierowane (⟶) lub dwukierunkowe (⟷).
 
 - Każda instancja przepływu $f \in F_h$ jest odwzorowywana przez funkcję przydziału:
-   $$\pi_F: F_h \to Z_h \times Z_h \times T \quad \text{gdzie} \quad T = \{\text{sym}, \text{dir}, \text{bidir}\}$$
+   $$\pi_F: F_h \to Z_h \times Z_h \times T \quad \mathrm{gdzie} \quad T = \{\mathrm{sym}, \mathrm{dir}, \mathrm{bidir}\}$$
 
 ### ♠️ Aksjomat 11 (Symetria Reprezentacji i Auto-Przepływy)
 
 - Przy połączeniu nieskierowanym (—) lub dwukierunkowym (⟷) kolejność podania stref nie ma znaczenia. Mimo tej samej symetrii portowej, (—) oznacza powiązanie statyczne (np. styk), a (⟷) aktywny kanał dwukierunkowy (f⟷). Przepływ może również łączyć strefę z samą sobą (auto-przepływ).
 
-- Dla typów orientacji $t \in \{\text{sym}, \text{bidir}\}$ zachodzi symetria reprezentacji krotki modulo relacja równoważności $\equiv$:
+- Dla typów orientacji $t \in \{\mathrm{sym}, \mathrm{bidir}\}$ zachodzi symetria reprezentacji krotki modulo relacja równoważności $\equiv$:
    $$(z_1, z_2, t) \equiv (z_2, z_1, t)$$
-   Dla $t = \text{dir}$ kolejność argumentów w parze jest asymetryczna. Dozwolone są auto-przepływy, gdzie $z_1 = z_2$.
+   Dla $t = \mathrm{dir}$ kolejność argumentów w parze jest asymetryczna. Dozwolone są auto-przepływy, gdzie $z_1 = z_2$.
 
 > ℹ️ Uwaga dotycząca semantyki typów: Relacja $\equiv$ określa wyłącznie symetrię podłączenia do portów $Z_h \times Z_h$. Typy sym i bidir stanowią jednak rozłączne elementy zbioru $T$: typ sym reprezentuje statyczną relację nieskierowaną (np. styk/potencjał), natomiast bidir reprezentuje atomowy, aktywny kanał dwukierunkowy ($f_{\leftrightarrow}$), którego pełna dwustronna dynamika jest interpretowana w Warstwie Semantycznej ($\mathcal{S}$).
 
@@ -155,37 +155,37 @@ Wprowadzam koncepcje "Grafów Cisowskiego" - są nadrzędnym meta-modelem (nadzb
 
 - Dowolny klasyczny graf skierowany $G = (V, E)$, gdzie $E \subseteq V \times V$, jest reprezentowalny w meta-modelu poprzez kanoniczne zanurzenie iniekcyjne:
    
-   $$\Phi: V \sqcup E \hookrightarrow U, \quad \text{gdzie} \quad \Phi(V) \subseteq N \quad \text{oraz} \quad \Phi(E) \subseteq H$$
+   $$\Phi: V \sqcup E \hookrightarrow U, \quad \mathrm{gdzie} \quad \Phi(V) \subseteq N \quad \mathrm{oraz} \quad \Phi(E) \subseteq H$$
    
    Dla każdej krawędzi $e = (u, v) \in E$ niech $h_e = \Phi(e) \in H$. Hiperkonektor $h_e$ posiada strukturę $\sigma(h_e) = (\{z_e^{(1)}, z_e^{(2)}\}, \{f_e\})$, gdzie $z_e^{(1)} \neq z_e^{(2)}$, i spełnia warunki:
    
-   $$\mu_Z(z_e^{(1)}) = \{\Phi(u)\}, \quad \mu_Z(z_e^{(2)}) = \{\Phi(v)\}, \quad \pi_F(f_e) = (z_e^{(1)}, z_e^{(2)}, \text{dir})$$
+   $$\mu_Z(z_e^{(1)}) = \{\Phi(u)\}, \quad \mu_Z(z_e^{(2)}) = \{\Phi(v)\}, \quad \pi_F(f_e) = (z_e^{(1)}, z_e^{(2)}, \mathrm{dir})$$
 
-### 📖 Definicja Zanurzenia Klasycznej Hiperkrawędzi ($\Phi_{\text{hyper}}$)
+### 📖 Definicja Zanurzenia Klasycznej Hiperkrawędzi ($\Phi_{\mathrm{hyper}}$)
 
 - Klasyczna nieskierowana hiperkrawędź Berge’a (worek/zbiór wierzchołków) jest po prostu szczególnym przypadkiem hiperkonektora, który posiada jedną strefę (zawierającą ten zbiór wierzchołków) oraz brak jakichkolwiek wewnętrznych przepływów.
 
 - Dowolny klasyczny hipergraf Berge’a $\mathcal{H} = (V, E)$, gdzie $e \subseteq V$ dla każdego $e \in E$, jest reprezentowalny w meta-modelu poprzez kanoniczne zanurzenie iniekcyjne:
    
-   $$\Phi_{\text{hyper}}: V \sqcup E \hookrightarrow U, \quad \text{gdzie} \quad \Phi_{\text{hyper}}(V) \subseteq N \quad \text{oraz} \quad \Phi_{\text{hyper}}(E) \subseteq H$$
+   $$\Phi_{\mathrm{hyper}}: V \sqcup E \hookrightarrow U, \quad \mathrm{gdzie} \quad \Phi_{\mathrm{hyper}}(V) \subseteq N \quad \mathrm{oraz} \quad \Phi_{\mathrm{hyper}}(E) \subseteq H$$
    
-   Dla każdej hiperkrawędzi $e \in E$ niech $h_e = \Phi_{\text{hyper}}(e) \in H$. Hiperkonektor $h_e$ posiada strukturę $\sigma(h_e) = (\{z_e\}, \emptyset)$ (brak przepływów, $\vert{}F_{h_e}\vert{} = 0$) i spełnia warunek:
+   Dla każdej hiperkrawędzi $e \in E$ niech $h_e = \Phi_{\mathrm{hyper}}(e) \in H$. Hiperkonektor $h_e$ posiada strukturę $\sigma(h_e) = (\{z_e\}, \emptyset)$ (brak przepływów, $\vert{}F_{h_e}\vert{} = 0$) i spełnia warunek:
    
-   $$\mu_Z(z_e) = \{\Phi_{\text{hyper}}(v) \mid v \in e\}$$
+   $$\mu_Z(z_e) = \{\Phi_{\mathrm{hyper}}(v) \mid v \in e\}$$
 
-### 📖 Definicja Zanurzenia Klasycznej Skierowanej Hiperkrawędzi ($\Phi_{\text{dir\_hyper}}$)
+### 📖 Definicja Zanurzenia Klasycznej Skierowanej Hiperkrawędzi ($\Phi_{\mathrm{dir\_hyper}}$)
 
 - Klasyczna skierowana hiperkrawędź (łącząca zbiór wejściowy ze zbiorem wyjściowym) jest szczególnym przypadkiem hiperkonektora, który posiada dwie odrębne strefy (zawierające odpowiednio wierzchołki źródłowe i docelowe) oraz jeden przepływ skierowany między tymi strefami.
 
-- Dowolny klasyczny skierowany hipergraf $\mathcal{H}_{\text{dir}} = (V, E_{\text{dir}})$, gdzie każda krawędź jest parą zbiorów $e = (T_e, H_e)$ dla $T_e, H_e \subseteq V$ (zbiór wejściowy Tail i wyjściowy Head), jest reprezentowalny w meta-modelu poprzez kanoniczne zanurzenie iniekcyjne:
+- Dowolny klasyczny skierowany hipergraf $\mathcal{H}_{\mathrm{dir}} = (V, E_{\mathrm{dir}})$, gdzie każda krawędź jest parą zbiorów $e = (T_e, H_e)$ dla $T_e, H_e \subseteq V$ (zbiór wejściowy Tail i wyjściowy Head), jest reprezentowalny w meta-modelu poprzez kanoniczne zanurzenie iniekcyjne:
    
-   $$\Phi_{\text{dir\_hyper}}: V \sqcup E_{\text{dir}} \hookrightarrow U, \quad \text{gdzie} \quad \Phi_{\text{dir\_hyper}}(V) \subseteq N \quad \text{oraz} \quad \Phi_{\text{dir\_hyper}}(E_{\text{dir}}) \subseteq H$$
+   $$\Phi_{\mathrm{dir\_hyper}}: V \sqcup E_{\mathrm{dir}} \hookrightarrow U, \quad \mathrm{gdzie} \quad \Phi_{\mathrm{dir\_hyper}}(V) \subseteq N \quad \mathrm{oraz} \quad \Phi_{\mathrm{dir\_hyper}}(E_{\mathrm{dir}}) \subseteq H$$
    
-   Dla każdej skierowanej hiperkrawędzi $e = (T_e, H_e) \in E_{\text{dir}}$ niech $h_e = \Phi_{\text{dir\_hyper}}(e) \in H$. Hiperkonektor $h_e$ posiada strukturę $\sigma(h_e) = (\{z_e^{\text{tail}}, z_e^{\text{head}}\}, \{f_e\})$, gdzie $z_e^{\text{tail}} \neq z_e^{\text{head}}$, i spełnia warunki:
+   Dla każdej skierowanej hiperkrawędzi $e = (T_e, H_e) \in E_{\mathrm{dir}}$ niech $h_e = \Phi_{\mathrm{dir\_hyper}}(e) \in H$. Hiperkonektor $h_e$ posiada strukturę $\sigma(h_e) = (\{z_e^{\mathrm{tail}}, z_e^{\mathrm{head}}\}, \{f_e\})$, gdzie $z_e^{\mathrm{tail}} \neq z_e^{\mathrm{head}}$, i spełnia warunki:
    
-   $$\mu_Z(z_e^{\text{tail}}) = \{\Phi_{\text{dir\_hyper}}(v) \mid v \in T_e\}, \quad \mu_Z(z_e^{\text{head}}) = \{\Phi_{\text{dir\_hyper}}(v) \mid v \in H_e\}$$
+   $$\mu_Z(z_e^{\mathrm{tail}}) = \{\Phi_{\mathrm{dir\_hyper}}(v) \mid v \in T_e\}, \quad \mu_Z(z_e^{\mathrm{head}}) = \{\Phi_{\mathrm{dir\_hyper}}(v) \mid v \in H_e\}$$
    
-   $$\pi_F(f_e) = (z_e^{\text{tail}}, z_e^{\text{head}}, \text{dir})$$
+   $$\pi_F(f_e) = (z_e^{\mathrm{tail}}, z_e^{\mathrm{head}}, \mathrm{dir})$$
 
 ---
 ---
