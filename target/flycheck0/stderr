@@ -1,5 +1,5 @@
-   0.177380900s  INFO prepare_target{force=false package_id=tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb) target="axiom_tests"}: cargo::core::compiler::fingerprint: fingerprint error for tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb)/Check { test: true }/TargetInner { kind: "test", name: "axiom_tests", benched: false, ..: with_path("A:\\A-JAN\\tisdb\\tisdb\\tests\\axiom_tests.rs", Edition2024) }
-   0.177422500s  INFO prepare_target{force=false package_id=tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb) target="axiom_tests"}: cargo::core::compiler::fingerprint:     err: failed to read `A:\A-JAN\tisdb\tisdb\target\debug\.fingerprint\tisdb-e5dbf2efae8d17b3\test-integration-test-axiom_tests`
+   0.242601100s  INFO prepare_target{force=false package_id=tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb) target="axiom_tests"}: cargo::core::compiler::fingerprint: fingerprint error for tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb)/Check { test: true }/TargetInner { kind: "test", name: "axiom_tests", benched: false, ..: with_path("A:\\A-JAN\\tisdb\\tisdb\\tests\\axiom_tests.rs", Edition2024) }
+   0.242662500s  INFO prepare_target{force=false package_id=tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb) target="axiom_tests"}: cargo::core::compiler::fingerprint:     err: failed to read `A:\A-JAN\tisdb\tisdb\target\debug\.fingerprint\tisdb-e5dbf2efae8d17b3\test-integration-test-axiom_tests`
 
 Caused by:
     Nie można odnaleźć określonego pliku. (os error 2)
@@ -24,8 +24,8 @@ Stack backtrace:
   16: <unknown>
   17: <unknown>
   18: <unknown>
-   0.181881600s  INFO prepare_target{force=false package_id=tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb) target="persistence_tests"}: cargo::core::compiler::fingerprint: fingerprint error for tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb)/Check { test: true }/TargetInner { kind: "test", name: "persistence_tests", benched: false, ..: with_path("A:\\A-JAN\\tisdb\\tisdb\\tests\\persistence_tests.rs", Edition2024) }
-   0.181901500s  INFO prepare_target{force=false package_id=tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb) target="persistence_tests"}: cargo::core::compiler::fingerprint:     err: failed to read `A:\A-JAN\tisdb\tisdb\target\debug\.fingerprint\tisdb-eec7eb0fb0b8293b\test-integration-test-persistence_tests`
+   0.248249000s  INFO prepare_target{force=false package_id=tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb) target="persistence_tests"}: cargo::core::compiler::fingerprint: fingerprint error for tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb)/Check { test: true }/TargetInner { kind: "test", name: "persistence_tests", benched: false, ..: with_path("A:\\A-JAN\\tisdb\\tisdb\\tests\\persistence_tests.rs", Edition2024) }
+   0.248272200s  INFO prepare_target{force=false package_id=tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb) target="persistence_tests"}: cargo::core::compiler::fingerprint:     err: failed to read `A:\A-JAN\tisdb\tisdb\target\debug\.fingerprint\tisdb-eec7eb0fb0b8293b\test-integration-test-persistence_tests`
 
 Caused by:
     Nie można odnaleźć określonego pliku. (os error 2)
@@ -50,8 +50,8 @@ Stack backtrace:
   16: <unknown>
   17: <unknown>
   18: <unknown>
-   0.182432200s  INFO prepare_target{force=false package_id=tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb) target="storage_tests"}: cargo::core::compiler::fingerprint: fingerprint error for tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb)/Check { test: true }/TargetInner { kind: "test", name: "storage_tests", benched: false, ..: with_path("A:\\A-JAN\\tisdb\\tisdb\\tests\\storage_tests.rs", Edition2024) }
-   0.182447000s  INFO prepare_target{force=false package_id=tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb) target="storage_tests"}: cargo::core::compiler::fingerprint:     err: failed to read `A:\A-JAN\tisdb\tisdb\target\debug\.fingerprint\tisdb-aaae5e7a469d2e69\test-integration-test-storage_tests`
+   0.248929100s  INFO prepare_target{force=false package_id=tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb) target="storage_tests"}: cargo::core::compiler::fingerprint: fingerprint error for tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb)/Check { test: true }/TargetInner { kind: "test", name: "storage_tests", benched: false, ..: with_path("A:\\A-JAN\\tisdb\\tisdb\\tests\\storage_tests.rs", Edition2024) }
+   0.248969600s  INFO prepare_target{force=false package_id=tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb) target="storage_tests"}: cargo::core::compiler::fingerprint:     err: failed to read `A:\A-JAN\tisdb\tisdb\target\debug\.fingerprint\tisdb-aaae5e7a469d2e69\test-integration-test-storage_tests`
 
 Caused by:
     Nie można odnaleźć określonego pliku. (os error 2)
@@ -79,5 +79,5 @@ Stack backtrace:
     Checking tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb)
 error: could not compile `tisdb` (test "storage_tests") due to 1 previous error
 warning: build failed, waiting for other jobs to finish...
-error: could not compile `tisdb` (test "axiom_tests") due to 1 previous error
 error: could not compile `tisdb` (test "persistence_tests") due to 1 previous error
+error: could not compile `tisdb` (test "axiom_tests") due to 1 previous error
