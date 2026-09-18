@@ -1,12 +1,83 @@
-   0.190512400s  INFO prepare_target{force=false package_id=tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb) target="tisdb"}: cargo::core::compiler::fingerprint: stale: changed "A:\\A-JAN\\tisdb\\tisdb\\src\\lib.rs"
-   0.190545100s  INFO prepare_target{force=false package_id=tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb) target="tisdb"}: cargo::core::compiler::fingerprint:           (vs) "A:\\A-JAN\\tisdb\\tisdb\\target\\debug\\.fingerprint\\tisdb-bbf73ed00c3df363\\dep-lib-tisdb"
-   0.190552300s  INFO prepare_target{force=false package_id=tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb) target="tisdb"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13434236005, nanos: 708775300 } < FileTime { seconds: 13434236064, nanos: 986289000 }
-   0.190756200s  INFO prepare_target{force=false package_id=tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb) target="tisdb"}: cargo::core::compiler::fingerprint: fingerprint dirty for tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("tisdb", ["cdylib", "rlib"], "A:\\A-JAN\\tisdb\\tisdb\\src\\lib.rs", Edition2024) }
-   0.190782300s  INFO prepare_target{force=false package_id=tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb) target="tisdb"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "A:\\A-JAN\\tisdb\\tisdb\\target\\debug\\.fingerprint\\tisdb-bbf73ed00c3df363\\dep-lib-tisdb", reference_mtime: FileTime { seconds: 13434236005, nanos: 708775300 }, stale: "A:\\A-JAN\\tisdb\\tisdb\\src\\lib.rs", stale_mtime: FileTime { seconds: 13434236064, nanos: 986289000 } }))
-   0.199795400s  INFO prepare_target{force=false package_id=tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb) target="tisdb"}: cargo::core::compiler::fingerprint: stale: changed "A:\\A-JAN\\tisdb\\tisdb\\src\\lib.rs"
-   0.199813800s  INFO prepare_target{force=false package_id=tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb) target="tisdb"}: cargo::core::compiler::fingerprint:           (vs) "A:\\A-JAN\\tisdb\\tisdb\\target\\debug\\.fingerprint\\tisdb-ee3add36579433c1\\dep-test-lib-tisdb"
-   0.199819600s  INFO prepare_target{force=false package_id=tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb) target="tisdb"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13434236005, nanos: 709769900 } < FileTime { seconds: 13434236064, nanos: 986289000 }
-   0.200082500s  INFO prepare_target{force=false package_id=tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb) target="tisdb"}: cargo::core::compiler::fingerprint: fingerprint dirty for tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("tisdb", ["cdylib", "rlib"], "A:\\A-JAN\\tisdb\\tisdb\\src\\lib.rs", Edition2024) }
-   0.200103800s  INFO prepare_target{force=false package_id=tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb) target="tisdb"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "A:\\A-JAN\\tisdb\\tisdb\\target\\debug\\.fingerprint\\tisdb-ee3add36579433c1\\dep-test-lib-tisdb", reference_mtime: FileTime { seconds: 13434236005, nanos: 709769900 }, stale: "A:\\A-JAN\\tisdb\\tisdb\\src\\lib.rs", stale_mtime: FileTime { seconds: 13434236064, nanos: 986289000 } }))
+   0.177380900s  INFO prepare_target{force=false package_id=tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb) target="axiom_tests"}: cargo::core::compiler::fingerprint: fingerprint error for tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb)/Check { test: true }/TargetInner { kind: "test", name: "axiom_tests", benched: false, ..: with_path("A:\\A-JAN\\tisdb\\tisdb\\tests\\axiom_tests.rs", Edition2024) }
+   0.177422500s  INFO prepare_target{force=false package_id=tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb) target="axiom_tests"}: cargo::core::compiler::fingerprint:     err: failed to read `A:\A-JAN\tisdb\tisdb\target\debug\.fingerprint\tisdb-e5dbf2efae8d17b3\test-integration-test-axiom_tests`
+
+Caused by:
+    Nie można odnaleźć określonego pliku. (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+   0.181881600s  INFO prepare_target{force=false package_id=tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb) target="persistence_tests"}: cargo::core::compiler::fingerprint: fingerprint error for tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb)/Check { test: true }/TargetInner { kind: "test", name: "persistence_tests", benched: false, ..: with_path("A:\\A-JAN\\tisdb\\tisdb\\tests\\persistence_tests.rs", Edition2024) }
+   0.181901500s  INFO prepare_target{force=false package_id=tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb) target="persistence_tests"}: cargo::core::compiler::fingerprint:     err: failed to read `A:\A-JAN\tisdb\tisdb\target\debug\.fingerprint\tisdb-eec7eb0fb0b8293b\test-integration-test-persistence_tests`
+
+Caused by:
+    Nie można odnaleźć określonego pliku. (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+   0.182432200s  INFO prepare_target{force=false package_id=tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb) target="storage_tests"}: cargo::core::compiler::fingerprint: fingerprint error for tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb)/Check { test: true }/TargetInner { kind: "test", name: "storage_tests", benched: false, ..: with_path("A:\\A-JAN\\tisdb\\tisdb\\tests\\storage_tests.rs", Edition2024) }
+   0.182447000s  INFO prepare_target{force=false package_id=tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb) target="storage_tests"}: cargo::core::compiler::fingerprint:     err: failed to read `A:\A-JAN\tisdb\tisdb\target\debug\.fingerprint\tisdb-aaae5e7a469d2e69\test-integration-test-storage_tests`
+
+Caused by:
+    Nie można odnaleźć określonego pliku. (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
     Checking tisdb v0.1.0-dev.1 (A:\A-JAN\tisdb\tisdb)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.92s
+error: could not compile `tisdb` (test "storage_tests") due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `tisdb` (test "axiom_tests") due to 1 previous error
+error: could not compile `tisdb` (test "persistence_tests") due to 1 previous error
