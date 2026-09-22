@@ -1,4 +1,4 @@
-# CODE SNAPSHOT v:2026392AUT0811331351 (before add redb)
+# CODE SNAPSHOT v:2026392AUT0907380110 (starting add redb)
 
 ## Metadata
 
@@ -6,22 +6,22 @@
 ├─ Katalog roboczy (CWD): A:/A-JAN/WIN-DOCS/REPO_OWN_RUST/GIT_tisdb/tisdb
 ├─ Lokalizacje (scan_at): ["./"]
 └─ Wzorce (match_pattern): ["./{examples|tests|docs|src}/**", "./{Cargo.toml|README.md}"]
-📦 Zeskanowano fizycznie: 400 plików, 118 katalogów
+📦 Zeskanowano fizycznie: 1554 plików, 255 katalogów
 ```
 
 ## Structure
 
 ```plaintext
-  ▣─┬ tisdb                             [459.7 KiB]                      A:/A-JAN/WIN-DOCS/REPO_OWN_RUST/GIT 
+  ▣─┬ tisdb                             [477.2 KiB]                      A:/A-JAN/WIN-DOCS/REPO_OWN_RUST/GIT 
     │                                                                    _tisdb/tisdb/                       
- 1  ├──• Cargo.toml                     [   1018 B] [2026-39-2 07:58:03] ./Cargo.toml                        
+ 1  ├──• Cargo.toml                     [  1.2 KiB] [2026-39-2 08:57:37] ./Cargo.toml                        
     ├──┬ docs                           [417.7 KiB] [2026-39-2 07:45:33] ./docs/                             
     │  └──┬ images                      [417.7 KiB] [2026-39-2 07:45:33] ./docs/images/                      
     │     └──• GRAFY_CISOWSKIEGO.png    [417.7 KiB] [2026-39-2 07:45:33] ./docs/images/GRAFY_CISOWSKIEGO.png 
-    ├──┬ src                            [ 31.7 KiB] [2026-39-2 07:47:10] ./src/                              
+    ├──┬ src                            [ 44.2 KiB] [2026-39-2 07:47:10] ./src/                              
  2  │  ├──• engine.rs                   [ 12.8 KiB] [2026-39-1 23:08:51] ./src/engine.rs                     
  3  │  ├──• error.rs                    [  1.1 KiB] [2026-39-1 22:33:50] ./src/error.rs                      
- 4  │  ├──• lib.rs                      [    770 B] [2026-39-1 21:54:27] ./src/lib.rs                        
+ 4  │  ├──• lib.rs                      [    858 B] [2026-39-2 08:59:18] ./src/lib.rs                        
     │  ├──┬ domain                      [ 11.6 KiB] [2026-39-2 07:47:10] ./src/domain/                       
  5  │  │  ├──• flow.rs                  [  1.8 KiB] [2026-39-1 21:54:01] ./src/domain/flow.rs                
  6  │  │  ├──• hyper.rs                 [  2.0 KiB] [2026-39-1 21:52:34] ./src/domain/hyper.rs               
@@ -29,15 +29,17 @@
  8  │  │  ├──• metadata.rs              [  3.6 KiB] [2026-39-1 22:48:17] ./src/domain/metadata.rs            
  9  │  │  ├──• node.rs                  [    701 B] [2026-39-1 21:52:19] ./src/domain/node.rs                
 10  │  │  └──• zone.rs                  [  1.5 KiB] [2026-39-1 21:53:46] ./src/domain/zone.rs                
-    │  └──┬ storage                     [  5.4 KiB] [2026-39-2 07:47:10] ./src/storage/                      
+    │  └──┬ storage                     [ 17.9 KiB] [2026-39-2 08:58:04] ./src/storage/                      
 11  │     ├──• backend.rs               [    610 B] [2026-39-1 23:07:07] ./src/storage/backend.rs            
 12  │     ├──• file.rs                  [  3.7 KiB] [2026-39-1 23:07:44] ./src/storage/file.rs               
-13  │     └──• memory.rs                [  1.1 KiB] [2026-39-1 23:08:08] ./src/storage/memory.rs             
-    └──┬ tests                          [  9.3 KiB] [2026-39-2 07:47:10] ./tests/                            
-14     ├──• axiom_tests.rs              [  1.9 KiB] [2026-39-1 21:55:27] ./tests/axiom_tests.rs              
-15     ├──• metadata_tests.rs           [  1.1 KiB] [2026-39-1 21:56:23] ./tests/metadata_tests.rs           
-16     ├──• persistence_tests.rs        [  4.6 KiB] [2026-39-1 22:49:39] ./tests/persistence_tests.rs        
-17     └──• storage_tests.rs            [  1.6 KiB] [2026-39-1 22:50:01] ./tests/storage_tests.rs            
+13  │     ├──• memory.rs                [  1.1 KiB] [2026-39-1 23:08:08] ./src/storage/memory.rs             
+14  │     └──• redb_backend.rs          [ 12.4 KiB] [2026-39-2 09:02:45] ./src/storage/redb_backend.rs       
+    └──┬ tests                          [ 14.0 KiB] [2026-39-2 08:53:26] ./tests/                            
+15     ├──• axiom_tests.rs              [  1.9 KiB] [2026-39-1 21:55:27] ./tests/axiom_tests.rs              
+16     ├──• metadata_tests.rs           [  1.1 KiB] [2026-39-1 21:56:23] ./tests/metadata_tests.rs           
+17     ├──• persistence_tests.rs        [  4.6 KiB] [2026-39-1 22:49:39] ./tests/persistence_tests.rs        
+18     ├──• redb_poc_tests.rs           [  4.8 KiB] [2026-39-2 08:53:14] ./tests/redb_poc_tests.rs           
+19     └──• storage_tests.rs            [  1.6 KiB] [2026-39-1 22:50:01] ./tests/storage_tests.rs            
 ```
 
 ## Source Code Content
@@ -47,7 +49,7 @@
 ```toml
 [package]
 name = "tisdb"
-version = "0.1.0-dev.1"
+version = "0.0.1-dev.1"
 authors = ["Jan Roman Cisowski „j-Cis” <code@cisowscy.com>"]
 license = "MIT OR Apache-2.0"
 edition = "2024"
@@ -81,11 +83,22 @@ appveyor = { repository = "tisdb/tisdb" }
 
 [dependencies]
 fslock = "0.2.1"
-rkyv = "0.8.18"
 serde = { version = "1.0.229", features = ["derive"] }
-thiserror = "2.0.20"
 ulid = "3.0.0"
+thiserror = "2.0.20"
 wasm-bindgen = { version = "0.2.128", optional = true }
+
+redb = "4.3.0"
+# Specyfikacja gwarantująca pełne Zero-Copy z redb bez AlignmentError 
+# oraz spójność między architekturami (32/64 bit).
+rkyv = { version = "0.8.18", default-features = false, features = [
+    "alloc",
+    "std",
+    "bytecheck",
+    "unaligned",
+    "little_endian",
+    "pointer_width_32",
+] }
 
 [features]
 wasm-bindgen = ["dep:wasm-bindgen"]
@@ -1004,10 +1017,12 @@ pub mod storage {
     pub mod backend;
     pub mod file;
     pub mod memory;
+	pub mod redb_backend;
 
     pub use backend::StorageBackend;
     pub use file::FileStorage;
     pub use memory::MemoryStorage;
+	pub use redb_backend::{RedbStorage, RedbWriteTxn, RedbReadTxn};
 }
 
 pub mod engine;
@@ -1205,7 +1220,253 @@ impl StorageBackend for MemoryStorage {
 }
 ```
 
-### [14] `./tests/axiom_tests.rs`
+### [14] `./src/storage/redb_backend.rs`
+
+```rust
+use std::path::Path;
+
+use redb::{Database, ReadableDatabase, ReadableTable, TableDefinition, ReadTransaction, WriteTransaction};
+use rkyv::{rancor::Error as RancorError, Archive};
+
+use crate::domain::{
+    Flow, FlowId, Hyperconnector, HyperconnectorId, Node, NodeId, Zone, ZoneId
+};
+use crate::error::CoreError;
+
+// 1. Definicje fizycznych tabel wewnątrz pliku B-Tree
+// Zastosowanie tablic [u8; 16] dla kluczy gwarantuje doskonałą wydajność indeksów redb (stała długość)
+const NODES_TABLE: TableDefinition<[u8; 16], &[u8]> = TableDefinition::new("nodes");
+const HYPERS_TABLE: TableDefinition<[u8; 16], &[u8]> = TableDefinition::new("hypers");
+const ZONES_TABLE: TableDefinition<[u8; 16], &[u8]> = TableDefinition::new("zones");
+const FLOWS_TABLE: TableDefinition<[u8; 16], &[u8]> = TableDefinition::new("flows");
+const META_TABLE: TableDefinition<&str, u32> = TableDefinition::new("metadata");
+
+pub struct RedbStorage {
+    db: Database,
+}
+
+impl RedbStorage {
+    /// Otwiera bazę i natychmiast inicjalizuje schemat, co chroni przed błędem "TableDoesNotExist"
+    pub fn open<P: AsRef<Path>>(path: P) -> Result<Self, CoreError> {
+        let db = Database::create(path)
+            .map_err(|e| CoreError::StorageError(format!("Błąd otwarcia bazy redb: {}", e)))?;
+        
+        let write_txn = db.begin_write().map_err(|e| CoreError::StorageError(e.to_string()))?;
+        {
+            let _ = write_txn.open_table(NODES_TABLE).unwrap();
+            let _ = write_txn.open_table(HYPERS_TABLE).unwrap();
+            let _ = write_txn.open_table(ZONES_TABLE).unwrap();
+            let _ = write_txn.open_table(FLOWS_TABLE).unwrap();
+            
+            let mut meta = write_txn.open_table(META_TABLE).unwrap();
+            if meta.get("format_version").unwrap().is_none() {
+                meta.insert("format_version", &2).unwrap(); // Zgodnie z formatem v2 (unaligned)
+            }
+        }
+        write_txn.commit().map_err(|e| CoreError::StorageError(e.to_string()))?;
+
+        Ok(Self { db })
+    }
+
+    /// Otwiera izolowaną transakcję zapisu (blokuje innych pisarzy)
+    pub fn begin_write(&self) -> Result<RedbWriteTxn, CoreError> {
+        let txn = self.db.begin_write().map_err(|e| CoreError::StorageError(e.to_string()))?;
+        Ok(RedbWriteTxn { txn })
+    }
+
+    /// Otwiera bez-blokadową transakcję odczytu ze zrzutu MVCC bazy (Snapshot Isolation)
+    pub fn begin_read(&self) -> Result<RedbReadTxn, CoreError> {
+        let txn = self.db.begin_read().map_err(|e| CoreError::StorageError(e.to_string()))?;
+        Ok(RedbReadTxn { txn })
+    }
+}
+
+// =====================================================================
+// TRANSAKCJA ODCZYTU (READ-ONLY)
+// =====================================================================
+pub struct RedbReadTxn {
+    txn: ReadTransaction,
+}
+
+impl RedbReadTxn {
+    pub fn get_node(&self, id: &NodeId) -> Result<Option<Node>, CoreError> {
+        let table = self.txn.open_table(NODES_TABLE).map_err(|e| CoreError::StorageError(e.to_string()))?;
+        if let Some(guard) = table.get(*id.as_bytes()).map_err(|e| CoreError::StorageError(e.to_string()))? {
+            let archived = rkyv::access::<<Node as Archive>::Archived, RancorError>(guard.value())
+                .map_err(|e| CoreError::SerializationError(format!("Błąd dostępu mmap: {}", e)))?;
+            let entity = rkyv::deserialize::<Node, RancorError>(archived)
+                .map_err(|e| CoreError::SerializationError(format!("Błąd deserializacji: {}", e)))?;
+            Ok(Some(entity))
+        } else {
+            Ok(None)
+        }
+    }
+
+    pub fn get_hyperconnector(&self, id: &HyperconnectorId) -> Result<Option<Hyperconnector>, CoreError> {
+        let table = self.txn.open_table(HYPERS_TABLE).map_err(|e| CoreError::StorageError(e.to_string()))?;
+        if let Some(guard) = table.get(*id.as_bytes()).map_err(|e| CoreError::StorageError(e.to_string()))? {
+            let archived = rkyv::access::<<Hyperconnector as Archive>::Archived, RancorError>(guard.value())
+                .map_err(|e| CoreError::SerializationError(format!("Błąd dostępu mmap: {}", e)))?;
+            let entity = rkyv::deserialize::<Hyperconnector, RancorError>(archived)
+                .map_err(|e| CoreError::SerializationError(format!("Błąd deserializacji: {}", e)))?;
+            Ok(Some(entity))
+        } else {
+            Ok(None)
+        }
+    }
+
+    pub fn get_zone(&self, id: &ZoneId) -> Result<Option<Zone>, CoreError> {
+        let table = self.txn.open_table(ZONES_TABLE).map_err(|e| CoreError::StorageError(e.to_string()))?;
+        if let Some(guard) = table.get(*id.as_bytes()).map_err(|e| CoreError::StorageError(e.to_string()))? {
+            let archived = rkyv::access::<<Zone as Archive>::Archived, RancorError>(guard.value())
+                .map_err(|e| CoreError::SerializationError(format!("Błąd dostępu mmap: {}", e)))?;
+            let entity = rkyv::deserialize::<Zone, RancorError>(archived)
+                .map_err(|e| CoreError::SerializationError(format!("Błąd deserializacji: {}", e)))?;
+            Ok(Some(entity))
+        } else {
+            Ok(None)
+        }
+    }
+
+    pub fn get_flow(&self, id: &FlowId) -> Result<Option<Flow>, CoreError> {
+        let table = self.txn.open_table(FLOWS_TABLE).map_err(|e| CoreError::StorageError(e.to_string()))?;
+        if let Some(guard) = table.get(*id.as_bytes()).map_err(|e| CoreError::StorageError(e.to_string()))? {
+            let archived = rkyv::access::<<Flow as Archive>::Archived, RancorError>(guard.value())
+                .map_err(|e| CoreError::SerializationError(format!("Błąd dostępu mmap: {}", e)))?;
+            let entity = rkyv::deserialize::<Flow, RancorError>(archived)
+                .map_err(|e| CoreError::SerializationError(format!("Błąd deserializacji: {}", e)))?;
+            Ok(Some(entity))
+        } else {
+            Ok(None)
+        }
+    }
+}
+
+// =====================================================================
+// TRANSAKCJA ZAPISU (READ-WRITE)
+// =====================================================================
+pub struct RedbWriteTxn {
+    txn: WriteTransaction,
+}
+
+impl RedbWriteTxn {
+    // --- NODE ---
+    pub fn get_node(&self, id: &NodeId) -> Result<Option<Node>, CoreError> {
+        let table = self.txn.open_table(NODES_TABLE).map_err(|e| CoreError::StorageError(e.to_string()))?;
+        if let Some(guard) = table.get(*id.as_bytes()).map_err(|e| CoreError::StorageError(e.to_string()))? {
+            let archived = rkyv::access::<<Node as Archive>::Archived, RancorError>(guard.value())
+                .map_err(|e| CoreError::SerializationError(format!("Błąd dostępu mmap: {}", e)))?;
+            let entity = rkyv::deserialize::<Node, RancorError>(archived)
+                .map_err(|e| CoreError::SerializationError(format!("Błąd deserializacji: {}", e)))?;
+            Ok(Some(entity))
+        } else {
+            Ok(None)
+        }
+    }
+
+    pub fn put_node(&self, node: &Node) -> Result<(), CoreError> {
+        let mut table = self.txn.open_table(NODES_TABLE).map_err(|e| CoreError::StorageError(e.to_string()))?;
+        let bytes = rkyv::to_bytes::<RancorError>(node).map_err(|e| CoreError::SerializationError(e.to_string()))?;
+        table.insert(*node.id().as_bytes(), bytes.as_slice()).map_err(|e| CoreError::StorageError(e.to_string()))?;
+        Ok(())
+    }
+    
+    pub fn delete_node(&self, id: &NodeId) -> Result<(), CoreError> {
+        let mut table = self.txn.open_table(NODES_TABLE).map_err(|e| CoreError::StorageError(e.to_string()))?;
+        table.remove(*id.as_bytes()).map_err(|e| CoreError::StorageError(e.to_string()))?;
+        Ok(())
+    }
+
+    // --- HYPERCONNECTOR ---
+    pub fn get_hyperconnector(&self, id: &HyperconnectorId) -> Result<Option<Hyperconnector>, CoreError> {
+        let table = self.txn.open_table(HYPERS_TABLE).map_err(|e| CoreError::StorageError(e.to_string()))?;
+        if let Some(guard) = table.get(*id.as_bytes()).map_err(|e| CoreError::StorageError(e.to_string()))? {
+            let archived = rkyv::access::<<Hyperconnector as Archive>::Archived, RancorError>(guard.value())
+                .map_err(|e| CoreError::SerializationError(format!("Błąd dostępu mmap: {}", e)))?;
+            let entity = rkyv::deserialize::<Hyperconnector, RancorError>(archived)
+                .map_err(|e| CoreError::SerializationError(format!("Błąd deserializacji: {}", e)))?;
+            Ok(Some(entity))
+        } else {
+            Ok(None)
+        }
+    }
+
+    pub fn put_hyperconnector(&self, hyper: &Hyperconnector) -> Result<(), CoreError> {
+        let mut table = self.txn.open_table(HYPERS_TABLE).map_err(|e| CoreError::StorageError(e.to_string()))?;
+        let bytes = rkyv::to_bytes::<RancorError>(hyper).map_err(|e| CoreError::SerializationError(e.to_string()))?;
+        table.insert(*hyper.id().as_bytes(), bytes.as_slice()).map_err(|e| CoreError::StorageError(e.to_string()))?;
+        Ok(())
+    }
+    
+    pub fn delete_hyperconnector(&self, id: &HyperconnectorId) -> Result<(), CoreError> {
+        let mut table = self.txn.open_table(HYPERS_TABLE).map_err(|e| CoreError::StorageError(e.to_string()))?;
+        table.remove(*id.as_bytes()).map_err(|e| CoreError::StorageError(e.to_string()))?;
+        Ok(())
+    }
+
+    // --- ZONE ---
+    pub fn get_zone(&self, id: &ZoneId) -> Result<Option<Zone>, CoreError> {
+        let table = self.txn.open_table(ZONES_TABLE).map_err(|e| CoreError::StorageError(e.to_string()))?;
+        if let Some(guard) = table.get(*id.as_bytes()).map_err(|e| CoreError::StorageError(e.to_string()))? {
+            let archived = rkyv::access::<<Zone as Archive>::Archived, RancorError>(guard.value())
+                .map_err(|e| CoreError::SerializationError(format!("Błąd dostępu mmap: {}", e)))?;
+            let entity = rkyv::deserialize::<Zone, RancorError>(archived)
+                .map_err(|e| CoreError::SerializationError(format!("Błąd deserializacji: {}", e)))?;
+            Ok(Some(entity))
+        } else {
+            Ok(None)
+        }
+    }
+
+    pub fn put_zone(&self, zone: &Zone) -> Result<(), CoreError> {
+        let mut table = self.txn.open_table(ZONES_TABLE).map_err(|e| CoreError::StorageError(e.to_string()))?;
+        let bytes = rkyv::to_bytes::<RancorError>(zone).map_err(|e| CoreError::SerializationError(e.to_string()))?;
+        table.insert(*zone.id().as_bytes(), bytes.as_slice()).map_err(|e| CoreError::StorageError(e.to_string()))?;
+        Ok(())
+    }
+
+    pub fn delete_zone(&self, id: &ZoneId) -> Result<(), CoreError> {
+        let mut table = self.txn.open_table(ZONES_TABLE).map_err(|e| CoreError::StorageError(e.to_string()))?;
+        table.remove(*id.as_bytes()).map_err(|e| CoreError::StorageError(e.to_string()))?;
+        Ok(())
+    }
+
+    // --- FLOW ---
+    pub fn get_flow(&self, id: &FlowId) -> Result<Option<Flow>, CoreError> {
+        let table = self.txn.open_table(FLOWS_TABLE).map_err(|e| CoreError::StorageError(e.to_string()))?;
+        if let Some(guard) = table.get(*id.as_bytes()).map_err(|e| CoreError::StorageError(e.to_string()))? {
+            let archived = rkyv::access::<<Flow as Archive>::Archived, RancorError>(guard.value())
+                .map_err(|e| CoreError::SerializationError(format!("Błąd dostępu mmap: {}", e)))?;
+            let entity = rkyv::deserialize::<Flow, RancorError>(archived)
+                .map_err(|e| CoreError::SerializationError(format!("Błąd deserializacji: {}", e)))?;
+            Ok(Some(entity))
+        } else {
+            Ok(None)
+        }
+    }
+
+    pub fn put_flow(&self, flow: &Flow) -> Result<(), CoreError> {
+        let mut table = self.txn.open_table(FLOWS_TABLE).map_err(|e| CoreError::StorageError(e.to_string()))?;
+        let bytes = rkyv::to_bytes::<RancorError>(flow).map_err(|e| CoreError::SerializationError(e.to_string()))?;
+        table.insert(*flow.id().as_bytes(), bytes.as_slice()).map_err(|e| CoreError::StorageError(e.to_string()))?;
+        Ok(())
+    }
+
+    pub fn delete_flow(&self, id: &FlowId) -> Result<(), CoreError> {
+        let mut table = self.txn.open_table(FLOWS_TABLE).map_err(|e| CoreError::StorageError(e.to_string()))?;
+        table.remove(*id.as_bytes()).map_err(|e| CoreError::StorageError(e.to_string()))?;
+        Ok(())
+    }
+
+    // --- Zatwierdzenie (ACID Commit) ---
+    pub fn commit(self) -> Result<(), CoreError> {
+        self.txn.commit().map_err(|e| CoreError::StorageError(e.to_string()))?;
+        Ok(())
+    }
+}
+```
+
+### [15] `./tests/axiom_tests.rs`
 
 ```rust
 use tisdb::{CisowskiEngine, CoreError, EntityId, FlowType, MemoryStorage};
@@ -1269,7 +1530,7 @@ fn test_axiom_10_flow_boundaries() {
 }
 ```
 
-### [15] `./tests/metadata_tests.rs`
+### [16] `./tests/metadata_tests.rs`
 
 ```rust
 use tisdb::{AttributeValue, CisowskiEngine, MemoryStorage};
@@ -1302,7 +1563,7 @@ fn test_metadata_attributes_lifecycle() {
 }
 ```
 
-### [16] `./tests/persistence_tests.rs`
+### [17] `./tests/persistence_tests.rs`
 
 ```rust
 use std::fs;
@@ -1444,7 +1705,138 @@ fn test_attributes_persistence_hashmap() {
 }
 ```
 
-### [17] `./tests/storage_tests.rs`
+### [18] `./tests/redb_poc_tests.rs`
+
+```rust
+use std::fs;
+use redb::{Database, ReadableDatabase, ReadableTable, TableDefinition};
+use rkyv::{Archive, Deserialize, Serialize};
+use rkyv::rancor::Error as RancorError;
+
+#[derive(Archive, Serialize, Deserialize, Debug, PartialEq)]
+#[rkyv(derive(Debug, PartialEq))]
+pub struct DummyNode {
+    pub id: u64,
+    pub class: String,
+}
+
+#[derive(Archive, Serialize, Deserialize, Debug, PartialEq)]
+#[rkyv(derive(Debug, PartialEq))]
+pub struct DummyZone {
+    pub id: u64,
+    pub name: String,
+}
+
+const NODES_TABLE: TableDefinition<u64, &[u8]> = TableDefinition::new("nodes");
+const ZONES_TABLE: TableDefinition<u64, &[u8]> = TableDefinition::new("zones");
+const METADATA_TABLE: TableDefinition<&str, u32> = TableDefinition::new("metadata");
+
+#[test]
+fn test_redb_prototype_atomicity_and_unaligned_rkyv_integration() {
+    let db_path = "test_redb_unaligned.db";
+    let _ = fs::remove_file(db_path); 
+
+    // KROK 1: Inicjalizacja i atomowa transakcja zapisu
+    {
+        let db = Database::create(db_path).unwrap();
+        let write_txn = db.begin_write().unwrap();
+        
+        {
+            let mut node_table = write_txn.open_table(NODES_TABLE).unwrap();
+            let mut meta_table = write_txn.open_table(METADATA_TABLE).unwrap();
+
+            meta_table.insert("format_version", &2).unwrap();
+
+            let node1 = DummyNode { id: 101, class: "Proces".into() };
+            let bytes1 = rkyv::to_bytes::<RancorError>(&node1).unwrap();
+            node_table.insert(101, bytes1.as_slice()).unwrap();
+        } 
+        
+        write_txn.commit().unwrap();
+    }
+
+    // KROK 2: Odczyt transakcyjny
+    {
+        let db = Database::create(db_path).unwrap(); 
+        let read_txn = db.begin_read().unwrap();
+        
+        let node_table = read_txn.open_table(NODES_TABLE).unwrap();
+        
+        let guard = node_table.get(101).unwrap().unwrap();
+        let node1_bytes = guard.value();
+
+        let archived_node = rkyv::access::<ArchivedDummyNode, RancorError>(node1_bytes)
+            .expect("Rkyv odrzucił bajty z bazy redb - sprawdz wyrównanie (unaligned)!");
+            
+        assert_eq!(archived_node.id, 101);
+        
+        let loaded_node: DummyNode = rkyv::deserialize::<DummyNode, RancorError>(archived_node).unwrap();
+        assert_eq!(loaded_node.id, 101);
+    }
+
+    let _ = fs::remove_file(db_path);
+}
+
+#[test]
+fn test_redb_rollback_atomicity() {
+    let db_path = "test_redb_rollback.db";
+    let _ = fs::remove_file(db_path); 
+
+    // 1. Zapis stabilny (Stan początkowy)
+    {
+        let db = Database::create(db_path).unwrap();
+        let write_txn = db.begin_write().unwrap();
+        {
+            let mut meta_table = write_txn.open_table(METADATA_TABLE).unwrap();
+            meta_table.insert("format_version", &2).unwrap();
+            
+            // NOWE: Inicjalizujemy puste tabele, aby istniały dla transakcji odczytu
+            let _ = write_txn.open_table(NODES_TABLE).unwrap();
+            let _ = write_txn.open_table(ZONES_TABLE).unwrap();
+        }
+        write_txn.commit().unwrap();
+    }
+
+    // 2. Próba wielotabelowego zapisu (Symulacja przerwania / Abort)
+    {
+        let db = Database::create(db_path).unwrap();
+        let write_txn = db.begin_write().unwrap();
+        {
+            let mut node_table = write_txn.open_table(NODES_TABLE).unwrap();
+            let mut zone_table = write_txn.open_table(ZONES_TABLE).unwrap();
+            
+            // Częściowe dodanie danych
+            let n = DummyNode { id: 777, class: "A".into() };
+            let z = DummyZone { id: 888, name: "B".into() };
+            
+            node_table.insert(777, rkyv::to_bytes::<RancorError>(&n).unwrap().as_slice()).unwrap();
+            zone_table.insert(888, rkyv::to_bytes::<RancorError>(&z).unwrap().as_slice()).unwrap();
+            
+            // Brak commit(). drop(write_txn) robi automatyczny rollback.
+        }
+    }
+
+    // 3. Weryfikacja: Częściowe dane NIE MOGĄ znajdować się na dysku
+    {
+        let db = Database::create(db_path).unwrap();
+        let read_txn = db.begin_read().unwrap();
+        
+        // Teraz open_table nie wyrzuci błędu, bo tabele zostały utworzone w kroku 1.
+        let node_table = read_txn.open_table(NODES_TABLE).unwrap();
+        let zone_table = read_txn.open_table(ZONES_TABLE).unwrap();
+        
+        assert!(node_table.get(777).unwrap().is_none(), "Baza naruszyła izolację - Node istnieje!");
+        assert!(zone_table.get(888).unwrap().is_none(), "Baza naruszyła izolację - Zone istnieje!");
+        
+        let meta_table = read_txn.open_table(METADATA_TABLE).unwrap();
+        assert_eq!(meta_table.get("format_version").unwrap().unwrap().value(), 2);
+    }
+    
+    let _ = fs::remove_file(db_path); 
+}
+```
+
+### [19] `./tests/storage_tests.rs`
 
 ```rust
 use std::fs::{self, OpenOptions};
@@ -1507,16 +1899,16 @@ fn test_broken_header() {
 ## End Structure Summary
 
 ```plaintext
-  ▣─┬ tisdb                             [459.7 KiB]                      A:/A-JAN/WIN-DOCS/REPO_OWN_RUST/GIT 
+  ▣─┬ tisdb                             [477.2 KiB]                      A:/A-JAN/WIN-DOCS/REPO_OWN_RUST/GIT 
     │                                                                    _tisdb/tisdb/                       
- 1  ├──• Cargo.toml                     [   1018 B] [2026-39-2 07:58:03] ./Cargo.toml                        
+ 1  ├──• Cargo.toml                     [  1.2 KiB] [2026-39-2 08:57:37] ./Cargo.toml                        
     ├──┬ docs                           [417.7 KiB] [2026-39-2 07:45:33] ./docs/                             
     │  └──┬ images                      [417.7 KiB] [2026-39-2 07:45:33] ./docs/images/                      
     │     └──• GRAFY_CISOWSKIEGO.png    [417.7 KiB] [2026-39-2 07:45:33] ./docs/images/GRAFY_CISOWSKIEGO.png 
-    ├──┬ src                            [ 31.7 KiB] [2026-39-2 07:47:10] ./src/                              
+    ├──┬ src                            [ 44.2 KiB] [2026-39-2 07:47:10] ./src/                              
  2  │  ├──• engine.rs                   [ 12.8 KiB] [2026-39-1 23:08:51] ./src/engine.rs                     
  3  │  ├──• error.rs                    [  1.1 KiB] [2026-39-1 22:33:50] ./src/error.rs                      
- 4  │  ├──• lib.rs                      [    770 B] [2026-39-1 21:54:27] ./src/lib.rs                        
+ 4  │  ├──• lib.rs                      [    858 B] [2026-39-2 08:59:18] ./src/lib.rs                        
     │  ├──┬ domain                      [ 11.6 KiB] [2026-39-2 07:47:10] ./src/domain/                       
  5  │  │  ├──• flow.rs                  [  1.8 KiB] [2026-39-1 21:54:01] ./src/domain/flow.rs                
  6  │  │  ├──• hyper.rs                 [  2.0 KiB] [2026-39-1 21:52:34] ./src/domain/hyper.rs               
@@ -1524,15 +1916,17 @@ fn test_broken_header() {
  8  │  │  ├──• metadata.rs              [  3.6 KiB] [2026-39-1 22:48:17] ./src/domain/metadata.rs            
  9  │  │  ├──• node.rs                  [    701 B] [2026-39-1 21:52:19] ./src/domain/node.rs                
 10  │  │  └──• zone.rs                  [  1.5 KiB] [2026-39-1 21:53:46] ./src/domain/zone.rs                
-    │  └──┬ storage                     [  5.4 KiB] [2026-39-2 07:47:10] ./src/storage/                      
+    │  └──┬ storage                     [ 17.9 KiB] [2026-39-2 08:58:04] ./src/storage/                      
 11  │     ├──• backend.rs               [    610 B] [2026-39-1 23:07:07] ./src/storage/backend.rs            
 12  │     ├──• file.rs                  [  3.7 KiB] [2026-39-1 23:07:44] ./src/storage/file.rs               
-13  │     └──• memory.rs                [  1.1 KiB] [2026-39-1 23:08:08] ./src/storage/memory.rs             
-    └──┬ tests                          [  9.3 KiB] [2026-39-2 07:47:10] ./tests/                            
-14     ├──• axiom_tests.rs              [  1.9 KiB] [2026-39-1 21:55:27] ./tests/axiom_tests.rs              
-15     ├──• metadata_tests.rs           [  1.1 KiB] [2026-39-1 21:56:23] ./tests/metadata_tests.rs           
-16     ├──• persistence_tests.rs        [  4.6 KiB] [2026-39-1 22:49:39] ./tests/persistence_tests.rs        
-17     └──• storage_tests.rs            [  1.6 KiB] [2026-39-1 22:50:01] ./tests/storage_tests.rs            
+13  │     ├──• memory.rs                [  1.1 KiB] [2026-39-1 23:08:08] ./src/storage/memory.rs             
+14  │     └──• redb_backend.rs          [ 12.4 KiB] [2026-39-2 09:02:45] ./src/storage/redb_backend.rs       
+    └──┬ tests                          [ 14.0 KiB] [2026-39-2 08:53:26] ./tests/                            
+15     ├──• axiom_tests.rs              [  1.9 KiB] [2026-39-1 21:55:27] ./tests/axiom_tests.rs              
+16     ├──• metadata_tests.rs           [  1.1 KiB] [2026-39-1 21:56:23] ./tests/metadata_tests.rs           
+17     ├──• persistence_tests.rs        [  4.6 KiB] [2026-39-1 22:49:39] ./tests/persistence_tests.rs        
+18     ├──• redb_poc_tests.rs           [  4.8 KiB] [2026-39-2 08:53:14] ./tests/redb_poc_tests.rs           
+19     └──• storage_tests.rs            [  1.6 KiB] [2026-39-1 22:50:01] ./tests/storage_tests.rs            
 ```
 
 ---

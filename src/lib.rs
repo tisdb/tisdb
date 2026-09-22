@@ -20,10 +20,12 @@ pub mod storage {
     pub mod backend;
     pub mod file;
     pub mod memory;
+	pub mod redb_backend;
 
     pub use backend::StorageBackend;
     pub use file::FileStorage;
     pub use memory::MemoryStorage;
+	pub use redb_backend::{RedbStorage, RedbWriteTxn, RedbReadTxn};
 }
 
 pub mod engine;
