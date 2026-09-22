@@ -1,5 +1,9 @@
 # Cisowski's Hyperconnector Model (Hiperkonektory Cisowskiego / Grafy Cisowskiego)
 
+[![Crates.io](https://img.shields.io/crates/v/tisdb.svg)](https://crates.io/crates/tisdb)
+[![Documentation](https://docs.rs/tisdb/badge.svg)](https://docs.rs/tisdb)
+[![GitHub](https://img.shields.io/badge/GitHub-tisdb-181717?logo=github)](https://github.com/tisdb/tisdb)
+
 Wprowadzam koncepcje "Grafów Cisowskiego" - są nadrzędnym meta-modelem (nadzbiorem), klasyczne teorie grafów i hipergrafów to jedynie jego zubożone podstruktury.
 
 ![Diagram](docs/images/GRAFY_CISOWSKIEGO.png)
@@ -189,3 +193,5 @@ Wprowadzam koncepcje "Grafów Cisowskiego" - są nadrzędnym meta-modelem (nadzb
 
 ---
 ---
+
+🫟

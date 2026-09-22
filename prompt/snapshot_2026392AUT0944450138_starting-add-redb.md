@@ -1,50 +1,117 @@
-# CODE SNAPSHOT v:2026392AUT0907380110 (starting add redb)
+# CODE SNAPSHOT v:2026392AUT0944450138 (starting add redb)
 
 ## Metadata
 
 ```text
 ├─ Katalog roboczy (CWD): A:/A-JAN/WIN-DOCS/REPO_OWN_RUST/GIT_tisdb/tisdb
 ├─ Lokalizacje (scan_at): ["./"]
-└─ Wzorce (match_pattern): ["./{examples|tests|docs|src}/**", "./{Cargo.toml|README.md}"]
-📦 Zeskanowano fizycznie: 1554 plików, 255 katalogów
+└─ Wzorce (match_pattern): ["./{examples|tests|docs|src}/**", "./{Cargo.toml|README.md|MODEL.md|ARCHITECTURE.md}"]
+📦 Zeskanowano fizycznie: 2004 plików, 285 katalogów
 ```
 
 ## Structure
 
 ```plaintext
-  ▣─┬ tisdb                             [477.2 KiB]                      A:/A-JAN/WIN-DOCS/REPO_OWN_RUST/GIT 
+  ▣─┬ tisdb                             [499.7 KiB]                      A:/A-JAN/WIN-DOCS/REPO_OWN_RUST/GIT 
     │                                                                    _tisdb/tisdb/                       
- 1  ├──• Cargo.toml                     [  1.2 KiB] [2026-39-2 08:57:37] ./Cargo.toml                        
+ 1  ├──• ARCHITECTURE.md                [  5.2 KiB] [2026-39-2 09:37:04] ./ARCHITECTURE.md                   
+ 2  ├──• Cargo.toml                     [  1.7 KiB] [2026-39-2 09:41:00] ./Cargo.toml                        
+ 3  ├──• MODEL.md                       [ 15.4 KiB] [2026-39-2 09:37:16] ./MODEL.md                          
+ 4  ├──• README.md                      [  1.4 KiB] [2026-39-2 09:36:23] ./README.md                         
     ├──┬ docs                           [417.7 KiB] [2026-39-2 07:45:33] ./docs/                             
     │  └──┬ images                      [417.7 KiB] [2026-39-2 07:45:33] ./docs/images/                      
     │     └──• GRAFY_CISOWSKIEGO.png    [417.7 KiB] [2026-39-2 07:45:33] ./docs/images/GRAFY_CISOWSKIEGO.png 
     ├──┬ src                            [ 44.2 KiB] [2026-39-2 07:47:10] ./src/                              
- 2  │  ├──• engine.rs                   [ 12.8 KiB] [2026-39-1 23:08:51] ./src/engine.rs                     
- 3  │  ├──• error.rs                    [  1.1 KiB] [2026-39-1 22:33:50] ./src/error.rs                      
- 4  │  ├──• lib.rs                      [    858 B] [2026-39-2 08:59:18] ./src/lib.rs                        
+ 5  │  ├──• engine.rs                   [ 12.8 KiB] [2026-39-1 23:08:51] ./src/engine.rs                     
+ 6  │  ├──• error.rs                    [  1.1 KiB] [2026-39-1 22:33:50] ./src/error.rs                      
+ 7  │  ├──• lib.rs                      [    858 B] [2026-39-2 08:59:18] ./src/lib.rs                        
     │  ├──┬ domain                      [ 11.6 KiB] [2026-39-2 07:47:10] ./src/domain/                       
- 5  │  │  ├──• flow.rs                  [  1.8 KiB] [2026-39-1 21:54:01] ./src/domain/flow.rs                
- 6  │  │  ├──• hyper.rs                 [  2.0 KiB] [2026-39-1 21:52:34] ./src/domain/hyper.rs               
- 7  │  │  ├──• id.rs                    [  1.9 KiB] [2026-37-3 13:41:25] ./src/domain/id.rs                  
- 8  │  │  ├──• metadata.rs              [  3.6 KiB] [2026-39-1 22:48:17] ./src/domain/metadata.rs            
- 9  │  │  ├──• node.rs                  [    701 B] [2026-39-1 21:52:19] ./src/domain/node.rs                
-10  │  │  └──• zone.rs                  [  1.5 KiB] [2026-39-1 21:53:46] ./src/domain/zone.rs                
+ 8  │  │  ├──• flow.rs                  [  1.8 KiB] [2026-39-1 21:54:01] ./src/domain/flow.rs                
+ 9  │  │  ├──• hyper.rs                 [  2.0 KiB] [2026-39-1 21:52:34] ./src/domain/hyper.rs               
+10  │  │  ├──• id.rs                    [  1.9 KiB] [2026-37-3 13:41:25] ./src/domain/id.rs                  
+11  │  │  ├──• metadata.rs              [  3.6 KiB] [2026-39-1 22:48:17] ./src/domain/metadata.rs            
+12  │  │  ├──• node.rs                  [    701 B] [2026-39-1 21:52:19] ./src/domain/node.rs                
+13  │  │  └──• zone.rs                  [  1.5 KiB] [2026-39-1 21:53:46] ./src/domain/zone.rs                
     │  └──┬ storage                     [ 17.9 KiB] [2026-39-2 08:58:04] ./src/storage/                      
-11  │     ├──• backend.rs               [    610 B] [2026-39-1 23:07:07] ./src/storage/backend.rs            
-12  │     ├──• file.rs                  [  3.7 KiB] [2026-39-1 23:07:44] ./src/storage/file.rs               
-13  │     ├──• memory.rs                [  1.1 KiB] [2026-39-1 23:08:08] ./src/storage/memory.rs             
-14  │     └──• redb_backend.rs          [ 12.4 KiB] [2026-39-2 09:02:45] ./src/storage/redb_backend.rs       
+14  │     ├──• backend.rs               [    610 B] [2026-39-1 23:07:07] ./src/storage/backend.rs            
+15  │     ├──• file.rs                  [  3.7 KiB] [2026-39-1 23:07:44] ./src/storage/file.rs               
+16  │     ├──• memory.rs                [  1.1 KiB] [2026-39-1 23:08:08] ./src/storage/memory.rs             
+17  │     └──• redb_backend.rs          [ 12.4 KiB] [2026-39-2 09:02:45] ./src/storage/redb_backend.rs       
     └──┬ tests                          [ 14.0 KiB] [2026-39-2 08:53:26] ./tests/                            
-15     ├──• axiom_tests.rs              [  1.9 KiB] [2026-39-1 21:55:27] ./tests/axiom_tests.rs              
-16     ├──• metadata_tests.rs           [  1.1 KiB] [2026-39-1 21:56:23] ./tests/metadata_tests.rs           
-17     ├──• persistence_tests.rs        [  4.6 KiB] [2026-39-1 22:49:39] ./tests/persistence_tests.rs        
-18     ├──• redb_poc_tests.rs           [  4.8 KiB] [2026-39-2 08:53:14] ./tests/redb_poc_tests.rs           
-19     └──• storage_tests.rs            [  1.6 KiB] [2026-39-1 22:50:01] ./tests/storage_tests.rs            
+18     ├──• axiom_tests.rs              [  1.9 KiB] [2026-39-1 21:55:27] ./tests/axiom_tests.rs              
+19     ├──• metadata_tests.rs           [  1.1 KiB] [2026-39-1 21:56:23] ./tests/metadata_tests.rs           
+20     ├──• persistence_tests.rs        [  4.6 KiB] [2026-39-1 22:49:39] ./tests/persistence_tests.rs        
+21     ├──• redb_poc_tests.rs           [  4.8 KiB] [2026-39-2 08:53:14] ./tests/redb_poc_tests.rs           
+22     └──• storage_tests.rs            [  1.6 KiB] [2026-39-1 22:50:01] ./tests/storage_tests.rs            
 ```
 
 ## Source Code Content
 
-### [1] `./Cargo.toml`
+### [1] `./ARCHITECTURE.md`
+
+```markdown
+# Architektura TISDB (Architecture & Decision Log)
+
+[![Crates.io](https://img.shields.io/crates/v/tisdb.svg)](https://crates.io/crates/tisdb)
+[![Documentation](https://docs.rs/tisdb/badge.svg)](https://docs.rs/tisdb)
+[![GitHub](https://img.shields.io/badge/GitHub-tisdb-181717?logo=github)](https://github.com/tisdb/tisdb)
+
+Niniejszy dokument opisuje kluczowe decyzje architektoniczne podjęte podczas tworzenia silnika bazy danych TISDB, ze szczególnym uwzględnieniem ewolucji warstwy fizycznego zapisu (Storage Layer). Dokument służy jako przewodnik dla kontrybutorów, wyjaśniający "dlaczego" system został zbudowany w taki, a nie inny sposób.
+
+## 1. Podział Odpowiedzialności (Separation of Concerns)
+
+Architektura TISDB opiera się na twardym oddzieleniu logiki domenowej od fizycznego zapisu danych.
+
+*   **`CisowskiEngine` (Warstwa Domenowa):** Silnik ontologiczno-logiczny grafu. Odpowiada wyłącznie za walidację relacji, spójność encji (N, H, Z, F) i przestrzeganie Aksjomatów TISOS (tzw. *Guardrails*).
+*   **`RedbStorage` (Warstwa Fizyczna):** Silnik K-V (Klucz-Wartość) zarządzający operacjami dyskowymi, transakcjami ACID, izolacją współbieżności i integralnością bajtów.
+
+## 2. Ewolucja Warstwy Storage (Log Decyzji)
+
+### Faza 1: Naiwne Snapshoty i problem RAM (Odrzucone)
+Początkowy prototyp `CisowskiEngine` opierał się na przetrzymywaniu całego grafu w pamięci operacyjnej (`HashMap<NodeId, Node>`) i zrzucaniu jej w całości do pliku binarnego na dysku.
+*   **Dlaczego z tego zrezygnowaliśmy?** Przy setkach tysięcy węzłów ładowanie całego grafu do RAM (deserializacja) oraz zrzucanie gigabajtowych snapshotów przy każdej drobnej zmianie całkowicie zabijało wydajność i zasoby I/O. System nie mógłby skalować się do rozmiarów produkcyjnych.
+
+### Faza 2: Eksperyment z Mmap, `rkyv` i pułapka "Unaligned" (Odrzucone)
+Aby rozwiązać problem pamięci, zdecydowaliśmy się na wykorzystanie bezpośredniego mapowania plików do pamięci (Mmap) z pomocą formatu zero-copy `rkyv`. Chcieliśmy nałożyć strukturę Rusta bezpośrednio na bajty na dysku.
+Podczas budowy Proof-of-Concept napotkaliśmy jednak krytyczny błąd sprzętowy procesorów: `UnalignedPointer`. 
+*   **Problem:** Systemy K-V zwracają wskaźniki na bajty z dysku. Domyślny format `rkyv` (oraz architektura CPU) wymaga, aby 8-bajtowe liczby (np. `u64`) były umieszczone pod adresami wielokrotności liczby 8. Bezpośredni zrzut powodował naruszenie tego wyrównania (Alignment Error), co w językach C/C++ skończyłoby się awarią systemu (Segfault), a w Rust skutkowało bezpiecznym, ale twardym odrzuceniem danych przez walidator.
+
+### Faza 3: Docelowy Model - `redb` + `rkyv (unaligned)` (Wdrożone)
+Stanęliśmy przed wyborem: kopiować dane z dysku do wyrównanych buforów (`AlignedVec` - utrata zalet Zero-Copy) lub zmienić definicję układu binarnego. Wybraliśmy to drugie rozwiązanie.
+
+#### Decyzja: Wybór silnika `redb`
+Do zarządzania plikiem użyto `redb`. Wybrano go ze względu na:
+1.  **Odporność na awarie (Crash-safe):** Struktura B-Tree z mechanizmem *Copy-on-Write* (CoW) gwarantuje, że aktywne dane nigdy nie są nadpisywane, dopóki transakcja nie zostanie potwierdzona (fsync).
+2.  **Jednoplikowość:** Cała baza mieści się w jednym przenośnym pliku `.cdb`.
+3.  **Transakcje ACID:** Baza wspiera złożone modyfikacje wielotabelowe. Testowaliśmy przerywanie takich transakcji (rollback/abort) i wykazaliśmy, że `redb` doskonale izoluje brudne dane i zapobiega uszkodzeniom strukturalnym.
+
+#### Decyzja: `rkyv` z flagą `unaligned`
+Aby pogodzić mapowanie pamięci `redb` z bezpośrednim rzutowaniem zmiennych, skonfigurowaliśmy `rkyv` z flagami `["unaligned", "pointer_width_32"]`.
+*   **Dlaczego?** Zmusza to Rusta i rkyv do odczytywania liczb bajt po bajcie (bez polegania na wbudowanych instrukcjach CPU zakładających ścisłe wyrównanie adresów). Zyskaliśmy w ten sposób prawdziwe **Zero-Copy z mmap**, eliminując koszty stertowych alokacji (alloc/copy) przy każdym odczycie encji, przy jednoczesnym zachowaniu pełnego bezpieczeństwa pamięci (memory-safe). Format ten gwarantuje też zgodność między maszynami 32 i 64-bitowymi.
+
+## 3. Organizacja Danych w B-Tree
+
+Fizyczny plik `redb` dzieli się na następujące tabele:
+*   `metadata` (Klucz: `&str`, Wartość: `u32`) - przechowuje metadane bazy i wersję formatu.
+*   `nodes` (Klucz: `[u8; 16]`, Wartość: Zserializowane w unaligned rkyv bajty encji)
+*   `hypers` (Klucz: `[u8; 16]`, Wartość: Zserializowane bajty)
+*   `zones` (Klucz: `[u8; 16]`, Wartość: Zserializowane bajty)
+*   `flows` (Klucz: `[u8; 16]`, Wartość: Zserializowane bajty)
+
+Użycie `[u8; 16]` (odpowiadające wygenerowanym identyfikatorom typu ULID) jako klucza gwarantuje ekstremalnie szybkie czasy przeszukiwania B-Drzewa przy zachowaniu chronologicznej (monotonicznej) lokalności danych.
+
+## 4. Przyszłość (Roadmap)
+
+Kolejnym kluczowym krokiem rozwojowym, dla którego fundamentem jest obecna architektura fizyczna, będzie wdrożenie **Silnika Kwerend (Query Engine)**. Zbudujemy warstwę zapytań polimorficznych, pozwalającą wyciągać podgrafy bezpośrednio na podstawie ścieżek klas ontologicznych (`class_path`) zapisanych w metadanych encji, korzystając z wydajności indeksów `redb`.
+
+---
+---
+
+🫟
+
+```
+
+### [2] `./Cargo.toml`
 
 ```toml
 [package]
@@ -56,7 +123,18 @@ edition = "2024"
 rust-version = "1.98.0"
 repository = "https://github.com/tisdb/tisdb"
 resolver = "3"
-
+description = "TISDB is a hypergraph database engine tailored for TISOS (Topologically Integrated System of Semantic Overlays), featuring strict axiom enforcement, atomic I/O, and Redb-based storage."
+keywords = ["database", "graph", "hypergraph", "redb"]
+categories = ["database", "database-implementations", "data-structures"]
+include = [
+    "src/**/*",
+    "docs/**/*",
+    "Cargo.toml",
+    "README.md",
+    "ARCHITECTURE.md",
+    "MODEL.rs",
+    "LICENSE*",
+]
 
 [package.metadata.cargo]
 edition = "2024"
@@ -106,7 +184,246 @@ wasm-bindgen = ["dep:wasm-bindgen"]
 
 ```
 
-### [2] `./src/domain/flow.rs`
+### [3] `./MODEL.md`
+
+```markdown
+# Cisowski's Hyperconnector Model (Hiperkonektory Cisowskiego / Grafy Cisowskiego)
+
+[![Crates.io](https://img.shields.io/crates/v/tisdb.svg)](https://crates.io/crates/tisdb)
+[![Documentation](https://docs.rs/tisdb/badge.svg)](https://docs.rs/tisdb)
+[![GitHub](https://img.shields.io/badge/GitHub-tisdb-181717?logo=github)](https://github.com/tisdb/tisdb)
+
+Wprowadzam koncepcje "Grafów Cisowskiego" - są nadrzędnym meta-modelem (nadzbiorem), klasyczne teorie grafów i hipergrafów to jedynie jego zubożone podstruktury.
+
+![Diagram](docs/images/GRAFY_CISOWSKIEGO.png)
+
+1. Klasyczny graf skierowany $\Big(\Phi\Big)$
+
+   - **Tradycyjne ujęcie:** Bezpośrednia relacja binarna $1:1$ łącząca dwa wierzchołki $\Big(u \to v\Big)$. Krawędź jest jedynie „płaskim” połączeniem pozbawionym własnej struktury wewnętrznej.
+
+   - **Redukcja w Meta-Modelu:**  Hiperkonektor zredukowany do dwóch jednoelementowych stref portowych $\Big(z_e^{(1)}$ zawiera $u$, $z_e^{(2)}$ zawiera $v\Big)$ powiązanych pojedynczą instancją przepływu skierowanego $\Big(\pi_F(f_e) = (z_e^{(1)}, z_e^{(2)}, \mathrm{dir})\Big)$.
+
+2. Klasyczny hipergraf Berge’a $\Big(\Phi_{\mathrm{hyper}}\Big)$
+
+   - **Tradycyjne ujęcie:** Płaski podzbiór wierzchołków $\Big(e \subseteq V\Big)$. Wszystkie elementy w krawędzi są równorzędne — brak tam jakichkolwiek wyróżnionych ról, portów czy struktury wewnętrznej.
+
+   - **Redukcja w Meta-Modelu:** Skrajnie uproszczony hiperkonektor całkowicie pozbawiony wewnętrznej dynamiki relacyjnej $\Big(\vert{}F_{h_e}\vert{} = 0\Big)$, posiadający zaledwie jedną strefę portową $\Big(z_e\Big)$, której funkcja zawartości przechowuje pełny zbiór wierzchołków $\Big(\mu_Z(z_e) = \Phi_{\mathrm{hyper}}(e)\Big)$.
+
+3. Klasyczny skierowany hipergraf $\Big(\Phi_{\mathrm{dir\_hyper}}\Big)$
+
+   - **Tradycyjne ujęcie:** Relacja wieloargumentowa łącząca podzbiór wejściowy (Tail) z podzbiorem wyjściowym (Head) w formule $T \to H$.
+
+   - **Redukcja w Meta-Modelu:** Hiperkonektor posiadający dokładnie dwie strefy interfejsowe $\Big(z_e^{\mathrm{tail}}$ oraz $z_e^{\mathrm{head}}\Big)$, z których każda agreguje odpowiedni podzbiór wierzchołków, spięte jednym wewnętrznym przepływem skierowanym między tymi portami.
+
+4. Metagrafy / Grafy hierarchiczne
+
+   - **Tradycyjne ujęcie:** Umożliwiają łączenie całych podgrafów lub krawędzi z innymi krawędziami, jednak często cierpią na brak twardej izolacji (połączenia skrośne przeskakują poziomy zagnieżdżenia).
+
+   - **Redukcja w Meta-Modelu:** Pełna, inżynieryjna enkapsulacja. Dowolna strefa może zawierać inne hiperkonektory $\Big(\mu_Z(z) \subseteq U\Big)$, tworząc ufundowaną strukturę zagnieżdżoną $\Big(\mathcal{R}_{\mathrm{contain}}\Big)$, w której jakikolwiek ruch skrośny jest ściśle kontrolowany przez dedykowane porty $\Big(Z_h\Big)$ i lokalne przepływy $\Big(F_h\Big)$.
+
+## Słownik Ontologiczny
+
+### ♦️ Węzły ($N$ – Nodes / Atoms)
+
+- Podstawowe, niepodzielne obiekty lub jednostki danych, które nie posiadają żadnej struktury wewnętrznej ani portów.
+
+- Atomy ontologiczne. Byty pozbawione wewnętrznej struktury topologicznej ($\vert{}Z_n\vert{}$ nie istnieje). Stanowią podstawowe jednostki danych lub obiekty niepodzielne w uniwersum.
+
+### ♣️ Hiperkonektory / Hiperkrawędzie ($H$ – Hyperconnectors / Relational Complexes)
+
+- Autonomiczne kontenery relacji, które posiadają własną tożsamość, własne porty (strefy) oraz wewnętrzne połączenia (przepływy).
+
+- Autonomiczne byty relacyjne posiadające własną tożsamość oraz przypisaną strukturę wewnętrzną $(Z_h, F_h)$. Użycie terminu hiperkrawędź w niniejszym formalizmie ma charakter rozszerzający i należy je rozumieć w sensie hiperkonektora (kompleksu portowego). W przeciwieństwie do klasycznej hiperkrawędzi Berge’a (będącej jedynie płaskim podbiorem wierzchołków), $H$ definiuje lokalny kontekst topologiczny posiadający własne porty (strefy) oraz wewnętrzną dynamikę (przepływy).
+
+### ♥️ Strefy ($Z$ – Zones / Ports)
+
+- Dyskretne punkty styku wewnątrz hiperkonektora. Pełnią podwójną rolę: są portami dla wewnętrznych przepływów oraz kontenerami na obiekty ($N$ i $H$). Ten sam obiekt z uniwersum (zarówno węzeł, jak i inny zagnieżdżony hiperkonektor) może znajdować się w zawartości wielu stref naraz.
+
+- Dyskretne elementy strukturalne stanowiące punkty styku (porty / role / interfejsy) danej hiperkrawędzi. Strefa $z \in Z_h$ nie jest zbiorem, lecz instancją portu o unikalnej tożsamości globalnej ($z_1 \neq z_2$). Pełni podwójną rolę: interfejsu relacyjnego (dla funkcji $\pi_F$) oraz kontenera zawartości (dla funkcji $\mu_Z(z) \subseteq U$). Zawartość stref ($\mu_Z$), obejmująca węzły $N$ oraz hiperkonektory $H$, może być współdzielona.
+
+### ♠️ Przepływy ($F$ – Flows / Relational Instances)
+
+- Autonomiczne połączenia relacyjne zachodzące wyłącznie pomiędzy strefami należącymi do tego samego hiperkonektora.
+
+- Autonomiczne instancje relacji zachodzące wyłącznie pomiędzy strefami należącymi do tej samej hiperkrawędzi ($Z_h \times Z_h$). Przepływ $f \in F_h$ nie jest zbiorem par, lecz unikalnym obiektem wskazywanym przez funkcję przydziału $\pi_F$, niosącym atomowy typ orientacji $T = \{\mathrm{sym}, \mathrm{dir}, \mathrm{bidir}\}$.
+
+## Aksjomaty Systemu
+
+### ♦️ Aksjomat 1 (Ontologia Węzłów)
+
+- W systemie istnieją węzły ($N$), które są prostymi, niepodzielnymi elementami (atomami) bez portów czy struktury wewnętrznej.
+
+- Istnieje zbiór węzłów $N$, których elementy są ontologicznymi atomami pozbawionymi struktury portowej.
+
+### ♣️ Aksjomat 2 (Ontologia Hiperkonektorów)
+
+- W systemie istnieją hiperkonektory ($H$), które są całkowicie odrębne od węzłów ($N$). Razem z węzłami tworzą pełne uniwersum obiektów ($U$).
+
+- Istnieje zbiór hiperkonektorów $H$. Zbiory $N$ oraz $H$ są rozłączne i tworzą uniwersum obiektów:
+   $U = N \sqcup H \quad \mathrm{gdzie} \quad N \cap H = \emptyset$ .
+
+### ♥️ Aksjomat 3 (Lokalność i Rozłączność Stref)
+
+- Każdy hiperkonektor ma swój własny, unikalny zestaw stref (portów). Jedna strefa nie może należeć do dwóch hiperkonektorów naraz.
+
+- Każdemu hiperkonektorowi $h \in H$ przypisana jest lokalna rodzina stref $Z_h$. Strefy należące do różnych hiperkonektorów są ściśle rozłączne:
+   $\forall h_1, h_2 \in H \quad (h_1 \neq h_2 \implies Z_{h_1} \cap Z_{h_2} = \emptyset)$ .
+
+### ♥️ Aksjomat 4 (Globalne Uniwersum Stref)
+
+- Wszystkie strefy w całym systemie tworzą łączną przestrzeń $Z$. Strefa nie może istnieć „luzem” poza swoim hiperkonektorem.
+
+- Globalną przestrzeń stref $Z$ definiuje się jako sumę rozłączną rodzin lokalnych:
+   $$Z = \bigsqcup_{h \in H} Z_h$$
+   Strefy nie istnieją jako samodzielne byty poza swoim hiperkonektorem macierzystym.
+
+### ♠️ Aksjomat 5 (Lokalność i Rozłączność Przepływów)
+
+- Przepływy są w 100% lokalne – dany przepływ należy ściśle do swojego hiperkonektora i nie może bezpośrednio wychodzić poza niego.
+
+- Każdemu hiperkonektorowi $h \in H$ przypisana jest lokalna rodzina instancji przepływów $F_h$. Przepływy należące do różnych hiperkonektorów są ściśle rozłączne:
+   $$\forall h_1, h_2 \in H \quad (h_1 \neq h_2 \implies F_{h_1} \cap F_{h_2} = \emptyset)$$
+
+### ♠️ Aksjomat 6 (Globalne Uniwersum Przepływów)
+
+- Cała przestrzeń przepływów w systemie ($F$) składa się wyłącznie z połączeń zdefiniowanych w poszczególnych hiperkonektorach.
+
+- Globalną przestrzeń przepływów $F$ definiuje się jako sumę rozłączną rodzin lokalnych:
+   $$F = \bigsqcup_{h \in H} F_h$$
+   Przepływy nie istnieją jako samodzielne byty poza swoim hiperkonektorem macierzystym.
+
+### ♣️ Aksjomat 7 (Odwzorowanie Struktury Hiperkonektora)
+
+- Każdy hiperkonektor ma przypisaną strukturę złożoną ze stref i przepływów. Może posiadać zero stref (byt bezportowy) lub zero przepływów.
+
+- Struktura dowolnego hiperkonektora $h \in H$ jest określona przez funkcję przydziału:
+   $$\sigma: H \to \mathcal{P}(Z) \times \mathcal{P}(F) \quad \mathrm{gdzie} \quad \sigma(h) = (Z_h, F_h)$$
+   Dopuszczalne są liczności $\vert{}Z_h\vert{} \ge 0$ oraz $\vert{}F_h\vert{} \ge 0$. Stan $\vert{}Z_h\vert{} = 0$ definiuje byt bezportowy (placeholder).
+
+### ♥️ Aksjomat 8 (Zawartość Stref i Współdzielenie Zawartości)
+
+- Strefa może być pusta lub zawierać w sobie dowolne węzły ($N$) oraz zagnieżdżone hiperkonektory ($H$). Ten sam obiekt z uniwersum $U$ (dowolny węzeł lub inny hiperkonektor) może znajdować się jednocześnie w zawartości wielu różnych stref..
+
+- Zawartość każdej strefy $z \in Z$ opisuje funkcja:
+   $$\mu_Z: Z \to \mathcal{P}(U)$$
+   Strefa może być pusta ($\mu_Z(z) = \emptyset$) lub zawierać dowolny podzbiór węzłów $N$ i/lub hiperkonektorów $H$. Obrazy funkcji $\mu_Z$ dla różnych stref nie muszą być rozłączne — dozwolone jest współdzielenie obiektów z uniwersum $U = N \sqcup H$ przez odrębne strefy.
+
+### ♥️ Aksjomat 9 (Relacja Zagnieżdżenia i Aksjomat Ufundowania)
+
+- Hiperkonektory mogą zawierać w swoich strefach inne hiperkonektory, tworząc strukturę zagnieżdżoną. Zagnieżdżanie nie może jednak tworzyć cykli (samozawierania) ani nieskończonej głębokości.
+
+- Relację bezpośredniego zagnieżdżenia $\mathcal{R}_{\mathrm{contain}} \subseteq U \times U$ definiuje się jako:
+   $$(h, u) \in \mathcal{R}_{\mathrm{contain}} \iff h \in H \land \exists z \in Z_h \bigl(u \in \mu_Z(z)\bigr)$$
+   Relacja $\mathcal{R}_{\mathrm{contain}}$ jest dobrze ufundowana (well-founded), co wyklucza istnienie nieskończonych łańcuchów zagnieżdżenia $u_0 \ni u_1 \ni u_2 \dots$. Ponadto jej domknięcie przechodnie $\mathcal{R}_{\mathrm{contain}}^+$ jest ściśle irrefleksywne:
+   $$\forall u \in U \quad (u, u) \notin \mathcal{R}_{\mathrm{contain}}^+$$
+
+### ♠️ Aksjomat 10 (Instancja i Typowanie Przepływu)
+
+- Każdy przepływ wewnątrz hiperkonektora łączy dwie jego strefy i posiada jeden z trzech typów połączenia: nieskierowane (—), skierowane (⟶) lub dwukierunkowe (⟷).
+
+- Każda instancja przepływu $f \in F_h$ jest odwzorowywana przez funkcję przydziału:
+   $$\pi_F: F_h \to Z_h \times Z_h \times T \quad \mathrm{gdzie} \quad T = \{\mathrm{sym}, \mathrm{dir}, \mathrm{bidir}\}$$
+
+### ♠️ Aksjomat 11 (Symetria Reprezentacji i Auto-Przepływy)
+
+- Przy połączeniu nieskierowanym (—) lub dwukierunkowym (⟷) kolejność podania stref nie ma znaczenia. Mimo tej samej symetrii portowej, (—) oznacza powiązanie statyczne (np. styk), a (⟷) aktywny kanał dwukierunkowy (f⟷). Przepływ może również łączyć strefę z samą sobą (auto-przepływ).
+
+- Dla typów orientacji $t \in \{\mathrm{sym}, \mathrm{bidir}\}$ zachodzi symetria reprezentacji krotki modulo relacja równoważności $\equiv$:
+   $$(z_1, z_2, t) \equiv (z_2, z_1, t)$$
+   Dla $t = \mathrm{dir}$ kolejność argumentów w parze jest asymetryczna. Dozwolone są auto-przepływy, gdzie $z_1 = z_2$.
+
+> ℹ️ Uwaga dotycząca semantyki typów: Relacja $\equiv$ określa wyłącznie symetrię podłączenia do portów $Z_h \times Z_h$. Typy sym i bidir stanowią jednak rozłączne elementy zbioru $T$: typ sym reprezentuje statyczną relację nieskierowaną (np. styk/potencjał), natomiast bidir reprezentuje atomowy, aktywny kanał dwukierunkowy ($f_{\leftrightarrow}$), którego pełna dwustronna dynamika jest interpretowana w Warstwie Semantycznej ($\mathcal{S}$).
+
+### ♠️ Aksjomat 12 (Multigrafowość Warstwy Relacyjnej)
+
+- Między tymi samymi dwiema strefami w tym samym hiperkonektorze może istnieć wiele niezależnych, równoległych przepływów tego samego typu.
+
+- Funkcja $\pi_F$ nie musi być iniekcją. Dwa odrębne obiekty przepływu $f_1, f_2 \in F_h$ ($f_1 \neq f_2$) mogą posiadać identyczny obraz $\pi_F(f_1) = \pi_F(f_2)$, co tworzy strukturę multigrafu.
+
+## Definicje Zanurzenia
+
+### 📖 Definicja Kanonicznego Zanurzenia Iniekcyjnego ($\Phi$) (Klasycznej Krawędzi w Grafie)
+
+- Klasyczna krawędź grafu (np. $A \to B$) jest po prostu szczególnym przypadkiem hiperkonektora, który posiada dwie odrębne strefy (zawierające odpowiednio $A$ i $B$) oraz jeden przepływ skierowany między nimi.
+
+- Dowolny klasyczny graf skierowany $G = (V, E)$, gdzie $E \subseteq V \times V$, jest reprezentowalny w meta-modelu poprzez kanoniczne zanurzenie iniekcyjne:
+   
+   $$\Phi: V \sqcup E \hookrightarrow U, \quad \mathrm{gdzie} \quad \Phi(V) \subseteq N \quad \mathrm{oraz} \quad \Phi(E) \subseteq H$$
+   
+   Dla każdej krawędzi $e = (u, v) \in E$ niech $h_e = \Phi(e) \in H$. Hiperkonektor $h_e$ posiada strukturę $\sigma(h_e) = (\{z_e^{(1)}, z_e^{(2)}\}, \{f_e\})$, gdzie $z_e^{(1)} \neq z_e^{(2)}$, i spełnia warunki:
+   
+   $$\mu_Z(z_e^{(1)}) = \{\Phi(u)\}, \quad \mu_Z(z_e^{(2)}) = \{\Phi(v)\}, \quad \pi_F(f_e) = (z_e^{(1)}, z_e^{(2)}, \mathrm{dir})$$
+
+### 📖 Definicja Zanurzenia Klasycznej Hiperkrawędzi ($\Phi_{\mathrm{hyper}}$)
+
+- Klasyczna nieskierowana hiperkrawędź Berge’a (worek/zbiór wierzchołków) jest po prostu szczególnym przypadkiem hiperkonektora, który posiada jedną strefę (zawierającą ten zbiór wierzchołków) oraz brak jakichkolwiek wewnętrznych przepływów.
+
+- Dowolny klasyczny hipergraf Berge’a $\mathcal{H} = (V, E)$, gdzie $e \subseteq V$ dla każdego $e \in E$, jest reprezentowalny w meta-modelu poprzez kanoniczne zanurzenie iniekcyjne:
+   
+   $$\Phi_{\mathrm{hyper}}: V \sqcup E \hookrightarrow U, \quad \mathrm{gdzie} \quad \Phi_{\mathrm{hyper}}(V) \subseteq N \quad \mathrm{oraz} \quad \Phi_{\mathrm{hyper}}(E) \subseteq H$$
+   
+   Dla każdej hiperkrawędzi $e \in E$ niech $h_e = \Phi_{\mathrm{hyper}}(e) \in H$. Hiperkonektor $h_e$ posiada strukturę $\sigma(h_e) = (\{z_e\}, \emptyset)$ (brak przepływów, $\vert{}F_{h_e}\vert{} = 0$) i spełnia warunek:
+   
+   $$\mu_Z(z_e) = \{\Phi_{\mathrm{hyper}}(v) \mid v \in e\}$$
+
+### 📖 Definicja Zanurzenia Klasycznej Skierowanej Hiperkrawędzi ($\Phi_{\mathrm{dir\_hyper}}$)
+
+- Klasyczna skierowana hiperkrawędź (łącząca zbiór wejściowy ze zbiorem wyjściowym) jest szczególnym przypadkiem hiperkonektora, który posiada dwie odrębne strefy (zawierające odpowiednio wierzchołki źródłowe i docelowe) oraz jeden przepływ skierowany między tymi strefami.
+
+- Dowolny klasyczny skierowany hipergraf $\mathcal{H}_{\mathrm{dir}} = (V, E_{\mathrm{dir}})$, gdzie każda krawędź jest parą zbiorów $e = (T_e, H_e)$ dla $T_e, H_e \subseteq V$ (zbiór wejściowy Tail i wyjściowy Head), jest reprezentowalny w meta-modelu poprzez kanoniczne zanurzenie iniekcyjne:
+   
+   $$\Phi_{\mathrm{dir\_hyper}}: V \sqcup E_{\mathrm{dir}} \hookrightarrow U, \quad \mathrm{gdzie} \quad \Phi_{\mathrm{dir\_hyper}}(V) \subseteq N \quad \mathrm{oraz} \quad \Phi_{\mathrm{dir\_hyper}}(E_{\mathrm{dir}}) \subseteq H$$
+   
+   Dla każdej skierowanej hiperkrawędzi $e = (T_e, H_e) \in E_{\mathrm{dir}}$ niech $h_e = \Phi_{\mathrm{dir\_hyper}}(e) \in H$. Hiperkonektor $h_e$ posiada strukturę $\sigma(h_e) = (\{z_e^{\mathrm{tail}}, z_e^{\mathrm{head}}\}, \{f_e\})$, gdzie $z_e^{\mathrm{tail}} \neq z_e^{\mathrm{head}}$, i spełnia warunki:
+   
+   $$\mu_Z(z_e^{\mathrm{tail}}) = \{\Phi_{\mathrm{dir\_hyper}}(v) \mid v \in T_e\}, \quad \mu_Z(z_e^{\mathrm{head}}) = \{\Phi_{\mathrm{dir\_hyper}}(v) \mid v \in H_e\}$$
+   
+   $$\pi_F(f_e) = (z_e^{\mathrm{tail}}, z_e^{\mathrm{head}}, \mathrm{dir})$$
+
+---
+---
+
+🫟
+
+```
+
+### [4] `./README.md`
+
+```markdown
+# TISDB (Topologically Integrated System Database)
+
+[![Crates.io](https://img.shields.io/crates/v/tisdb.svg)](https://crates.io/crates/tisdb)
+[![Documentation](https://docs.rs/tisdb/badge.svg)](https://docs.rs/tisdb)
+[![GitHub](https://img.shields.io/badge/GitHub-tisdb-181717?logo=github)](https://github.com/tisdb/tisdb)
+
+TISDB is a hypergraph database engine tailored for TISOS (Topologically Integrated System of Semantic Overlays). It features strict axiom enforcement, atomic I/O, and Redb-based storage.
+
+## O projekcie
+
+TISDB to dedykowany silnik bazy danych grafowych budowany na potrzeby modelu ontologicznego TISOS. Silnik odpowiada za rygorystyczne przestrzeganie aksjomatów strukturalnych (Guardrails) dla Węzłów (Nodes), Hiperkonektorów (Hyperconnectors), Stref (Zones) oraz Przepływów (Flows).
+
+*Uwaga: Projekt jest we wczesnej fazie rozwoju (dev-preview) i jego API może ulegać drastycznym zmianom.*
+
+## Architektura
+
+Więcej informacji na temat decyzji projektowych, modelu pamięci (Zero-Copy mmap) oraz silnika transakcyjnego znajduje się w pliku [ARCHITECTURE.md](ARCHITECTURE.md).
+
+## Model
+
+Szczegółowy opis struktury grafu, definicje encji (Węzły, Hiperkonektory, Strefy, Przepływy) oraz aksjomaty relacyjne znajdują się w pliku [MODEL.rs](MODEL.rs).
+
+## Licencja
+
+Projekt dystrybuowany na podwójnej licencji: MIT oraz Apache-2.0.
+
+---
+---
+
+🫟
+
+```
+
+### [5] `./src/domain/flow.rs`
 
 ```rust
 use crate::domain::id::{FlowId, HyperconnectorId, ZoneId};
@@ -189,7 +506,7 @@ impl Flow {
 }
 ```
 
-### [3] `./src/domain/hyper.rs`
+### [6] `./src/domain/hyper.rs`
 
 ```rust
 // src/domain/hyper.rs
@@ -268,7 +585,7 @@ impl Hyperconnector {
 }
 ```
 
-### [4] `./src/domain/id.rs`
+### [7] `./src/domain/id.rs`
 
 ```rust
 use rkyv::{Archive, Deserialize, Serialize};
@@ -354,7 +671,7 @@ pub enum EntityId {
 }
 ```
 
-### [5] `./src/domain/metadata.rs`
+### [8] `./src/domain/metadata.rs`
 
 ```rust
 use std::collections::HashMap;
@@ -480,7 +797,7 @@ impl EntityHeader {
 }
 ```
 
-### [6] `./src/domain/node.rs`
+### [9] `./src/domain/node.rs`
 
 ```rust
 // src/domain/node.rs
@@ -513,7 +830,7 @@ impl Node {
 }
 ```
 
-### [7] `./src/domain/zone.rs`
+### [10] `./src/domain/zone.rs`
 
 ```rust
 use crate::domain::id::{EntityId, HyperconnectorId, ZoneId};
@@ -574,7 +891,7 @@ impl Zone {
 }
 ```
 
-### [8] `./src/engine.rs`
+### [11] `./src/engine.rs`
 
 ```rust
 // src/engine.rs
@@ -957,7 +1274,7 @@ impl<S: StorageBackend> CisowskiEngine<S> {
 }
 ```
 
-### [9] `./src/error.rs`
+### [12] `./src/error.rs`
 
 ```rust
 use thiserror::Error;
@@ -992,7 +1309,7 @@ pub enum CoreError {
 }
 ```
 
-### [10] `./src/lib.rs`
+### [13] `./src/lib.rs`
 
 ```rust
 pub mod error;
@@ -1034,7 +1351,7 @@ pub use error::CoreError;
 pub use storage::*;
 ```
 
-### [11] `./src/storage/backend.rs`
+### [14] `./src/storage/backend.rs`
 
 ```rust
 // src/storage/backend.rs
@@ -1058,7 +1375,7 @@ pub trait StorageBackend {
 }
 ```
 
-### [12] `./src/storage/file.rs`
+### [15] `./src/storage/file.rs`
 
 ```rust
 // src/storage/file.rs
@@ -1172,7 +1489,7 @@ impl StorageBackend for FileStorage {
 }
 ```
 
-### [13] `./src/storage/memory.rs`
+### [16] `./src/storage/memory.rs`
 
 ```rust
 // src/storage/memory.rs
@@ -1220,7 +1537,7 @@ impl StorageBackend for MemoryStorage {
 }
 ```
 
-### [14] `./src/storage/redb_backend.rs`
+### [17] `./src/storage/redb_backend.rs`
 
 ```rust
 use std::path::Path;
@@ -1466,7 +1783,7 @@ impl RedbWriteTxn {
 }
 ```
 
-### [15] `./tests/axiom_tests.rs`
+### [18] `./tests/axiom_tests.rs`
 
 ```rust
 use tisdb::{CisowskiEngine, CoreError, EntityId, FlowType, MemoryStorage};
@@ -1530,7 +1847,7 @@ fn test_axiom_10_flow_boundaries() {
 }
 ```
 
-### [16] `./tests/metadata_tests.rs`
+### [19] `./tests/metadata_tests.rs`
 
 ```rust
 use tisdb::{AttributeValue, CisowskiEngine, MemoryStorage};
@@ -1563,7 +1880,7 @@ fn test_metadata_attributes_lifecycle() {
 }
 ```
 
-### [17] `./tests/persistence_tests.rs`
+### [20] `./tests/persistence_tests.rs`
 
 ```rust
 use std::fs;
@@ -1705,7 +2022,7 @@ fn test_attributes_persistence_hashmap() {
 }
 ```
 
-### [18] `./tests/redb_poc_tests.rs`
+### [21] `./tests/redb_poc_tests.rs`
 
 ```rust
 use std::fs;
@@ -1836,7 +2153,7 @@ fn test_redb_rollback_atomicity() {
 }
 ```
 
-### [19] `./tests/storage_tests.rs`
+### [22] `./tests/storage_tests.rs`
 
 ```rust
 use std::fs::{self, OpenOptions};
@@ -1899,34 +2216,37 @@ fn test_broken_header() {
 ## End Structure Summary
 
 ```plaintext
-  ▣─┬ tisdb                             [477.2 KiB]                      A:/A-JAN/WIN-DOCS/REPO_OWN_RUST/GIT 
+  ▣─┬ tisdb                             [499.7 KiB]                      A:/A-JAN/WIN-DOCS/REPO_OWN_RUST/GIT 
     │                                                                    _tisdb/tisdb/                       
- 1  ├──• Cargo.toml                     [  1.2 KiB] [2026-39-2 08:57:37] ./Cargo.toml                        
+ 1  ├──• ARCHITECTURE.md                [  5.2 KiB] [2026-39-2 09:37:04] ./ARCHITECTURE.md                   
+ 2  ├──• Cargo.toml                     [  1.7 KiB] [2026-39-2 09:41:00] ./Cargo.toml                        
+ 3  ├──• MODEL.md                       [ 15.4 KiB] [2026-39-2 09:37:16] ./MODEL.md                          
+ 4  ├──• README.md                      [  1.4 KiB] [2026-39-2 09:36:23] ./README.md                         
     ├──┬ docs                           [417.7 KiB] [2026-39-2 07:45:33] ./docs/                             
     │  └──┬ images                      [417.7 KiB] [2026-39-2 07:45:33] ./docs/images/                      
     │     └──• GRAFY_CISOWSKIEGO.png    [417.7 KiB] [2026-39-2 07:45:33] ./docs/images/GRAFY_CISOWSKIEGO.png 
     ├──┬ src                            [ 44.2 KiB] [2026-39-2 07:47:10] ./src/                              
- 2  │  ├──• engine.rs                   [ 12.8 KiB] [2026-39-1 23:08:51] ./src/engine.rs                     
- 3  │  ├──• error.rs                    [  1.1 KiB] [2026-39-1 22:33:50] ./src/error.rs                      
- 4  │  ├──• lib.rs                      [    858 B] [2026-39-2 08:59:18] ./src/lib.rs                        
+ 5  │  ├──• engine.rs                   [ 12.8 KiB] [2026-39-1 23:08:51] ./src/engine.rs                     
+ 6  │  ├──• error.rs                    [  1.1 KiB] [2026-39-1 22:33:50] ./src/error.rs                      
+ 7  │  ├──• lib.rs                      [    858 B] [2026-39-2 08:59:18] ./src/lib.rs                        
     │  ├──┬ domain                      [ 11.6 KiB] [2026-39-2 07:47:10] ./src/domain/                       
- 5  │  │  ├──• flow.rs                  [  1.8 KiB] [2026-39-1 21:54:01] ./src/domain/flow.rs                
- 6  │  │  ├──• hyper.rs                 [  2.0 KiB] [2026-39-1 21:52:34] ./src/domain/hyper.rs               
- 7  │  │  ├──• id.rs                    [  1.9 KiB] [2026-37-3 13:41:25] ./src/domain/id.rs                  
- 8  │  │  ├──• metadata.rs              [  3.6 KiB] [2026-39-1 22:48:17] ./src/domain/metadata.rs            
- 9  │  │  ├──• node.rs                  [    701 B] [2026-39-1 21:52:19] ./src/domain/node.rs                
-10  │  │  └──• zone.rs                  [  1.5 KiB] [2026-39-1 21:53:46] ./src/domain/zone.rs                
+ 8  │  │  ├──• flow.rs                  [  1.8 KiB] [2026-39-1 21:54:01] ./src/domain/flow.rs                
+ 9  │  │  ├──• hyper.rs                 [  2.0 KiB] [2026-39-1 21:52:34] ./src/domain/hyper.rs               
+10  │  │  ├──• id.rs                    [  1.9 KiB] [2026-37-3 13:41:25] ./src/domain/id.rs                  
+11  │  │  ├──• metadata.rs              [  3.6 KiB] [2026-39-1 22:48:17] ./src/domain/metadata.rs            
+12  │  │  ├──• node.rs                  [    701 B] [2026-39-1 21:52:19] ./src/domain/node.rs                
+13  │  │  └──• zone.rs                  [  1.5 KiB] [2026-39-1 21:53:46] ./src/domain/zone.rs                
     │  └──┬ storage                     [ 17.9 KiB] [2026-39-2 08:58:04] ./src/storage/                      
-11  │     ├──• backend.rs               [    610 B] [2026-39-1 23:07:07] ./src/storage/backend.rs            
-12  │     ├──• file.rs                  [  3.7 KiB] [2026-39-1 23:07:44] ./src/storage/file.rs               
-13  │     ├──• memory.rs                [  1.1 KiB] [2026-39-1 23:08:08] ./src/storage/memory.rs             
-14  │     └──• redb_backend.rs          [ 12.4 KiB] [2026-39-2 09:02:45] ./src/storage/redb_backend.rs       
+14  │     ├──• backend.rs               [    610 B] [2026-39-1 23:07:07] ./src/storage/backend.rs            
+15  │     ├──• file.rs                  [  3.7 KiB] [2026-39-1 23:07:44] ./src/storage/file.rs               
+16  │     ├──• memory.rs                [  1.1 KiB] [2026-39-1 23:08:08] ./src/storage/memory.rs             
+17  │     └──• redb_backend.rs          [ 12.4 KiB] [2026-39-2 09:02:45] ./src/storage/redb_backend.rs       
     └──┬ tests                          [ 14.0 KiB] [2026-39-2 08:53:26] ./tests/                            
-15     ├──• axiom_tests.rs              [  1.9 KiB] [2026-39-1 21:55:27] ./tests/axiom_tests.rs              
-16     ├──• metadata_tests.rs           [  1.1 KiB] [2026-39-1 21:56:23] ./tests/metadata_tests.rs           
-17     ├──• persistence_tests.rs        [  4.6 KiB] [2026-39-1 22:49:39] ./tests/persistence_tests.rs        
-18     ├──• redb_poc_tests.rs           [  4.8 KiB] [2026-39-2 08:53:14] ./tests/redb_poc_tests.rs           
-19     └──• storage_tests.rs            [  1.6 KiB] [2026-39-1 22:50:01] ./tests/storage_tests.rs            
+18     ├──• axiom_tests.rs              [  1.9 KiB] [2026-39-1 21:55:27] ./tests/axiom_tests.rs              
+19     ├──• metadata_tests.rs           [  1.1 KiB] [2026-39-1 21:56:23] ./tests/metadata_tests.rs           
+20     ├──• persistence_tests.rs        [  4.6 KiB] [2026-39-1 22:49:39] ./tests/persistence_tests.rs        
+21     ├──• redb_poc_tests.rs           [  4.8 KiB] [2026-39-2 08:53:14] ./tests/redb_poc_tests.rs           
+22     └──• storage_tests.rs            [  1.6 KiB] [2026-39-1 22:50:01] ./tests/storage_tests.rs            
 ```
 
 ---
