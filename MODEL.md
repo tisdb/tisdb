@@ -1,20 +1,19 @@
 # Cisowski's Hyperconnector Model (Hiperkonektory Cisowskiego / Grafy Cisowskiego)
 
-[![Crates.io](https://img.shields.io/crates/v/tisdb.svg)](https://crates.io/crates/tisdb)
-[![Documentation](https://docs.rs/tisdb/badge.svg)](https://docs.rs/tisdb)
-[![GitHub](https://img.shields.io/badge/GitHub-tisdb-181717?logo=github)](https://github.com/tisdb/tisdb)
+>  ---
+>  - Autor koncepcji: [Jan Roman Cisowski](https://orcid.org/0009-0009-2907-3792)  
+>  - Model „Hiperkonektory Cisowskiego” jest oryginalną koncepcją teoretyczną, stanowiącą nadrzędny meta-model nad klasycznymi grafami i hipergrafami.  
+>  - Wszystkie prawa zastrzeżone. Rozpowszechnianie, kopiowanie lub wykorzystanie fragmentów koncepcji wymaga zgody autora.
+>  
+>   **CYTOWANIE** (bibtex)
+>  ```bibtex
+>  @misc{cisowski2026hyperconnector, author = {Jan Cisowski}, title = {Cisowski's Hyperconnector Model (Hiperkonektory Cisowskiego)}, subtitle = {Ontologiczny meta-model grafów i hipergrafów jako fundament systemu bazodanowego}, year = {2026}, month = {September}, day = {8}, howpublished = {Dataset}, orcid = {https://orcid.org/0009-0009-2907-3792}, url = {https://github.com/tisdb/tisdb/blob/main/MODEL.md}, note = {Dostępne także na: https://www.cisowscy.com/modelowanie-danych/hiperkonektory-cisowskiego},
+>  ```
+>  ---
 
 Wprowadzam koncepcje "Grafów Cisowskiego" - są nadrzędnym meta-modelem (nadzbiorem), klasyczne teorie grafów i hipergrafów to jedynie jego zubożone podstruktury.
 
 ![Diagram](docs/images/GRAFY_CISOWSKIEGO.png)
-
----
-
-- Autor koncepcji: [Jan Cisowski](https://orcid.org/0009-0009-2907-3792)  
-- Model „Hiperkonektory Cisowskiego” jest oryginalną koncepcją teoretyczną, stanowiącą nadrzędny meta-model nad klasycznymi grafami i hipergrafami.  
-- Wszystkie prawa zastrzeżone. Rozpowszechnianie, kopiowanie lub wykorzystanie fragmentów koncepcji wymaga zgody autora.
-- 
----
 
 1. Klasyczny graf skierowany $\Big(\Phi\Big)$
 
