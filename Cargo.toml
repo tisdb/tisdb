@@ -7,7 +7,7 @@ edition = "2024"
 rust-version = "1.98.0"
 repository = "https://github.com/tisdb/tisdb"
 resolver = "3"
-
+description = "TISDB is a hypergraph database engine tailored for TISOS (Topologically Integrated System of Semantic Overlays), featuring strict axiom enforcement, atomic I/O, and Redb-based storage."
 
 [package.metadata.cargo]
 edition = "2024"
