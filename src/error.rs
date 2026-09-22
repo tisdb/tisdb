@@ -20,6 +20,11 @@ pub enum CoreError {
     #[error("Błąd warstwy pamięci masowej (IO/Storage): {0}")]
     StorageError(String),
 
-    #[error("Błąd binarnej serializacji/deserializacji (rkyv)")]
-    SerializationError,
+    // --- ZMIANA: Dodano pole (String) aby przenosić komunikat błędu rancor ---
+    #[error("Błąd binarnej serializacji/deserializacji (rkyv): {0}")]
+    SerializationError(String),
+
+    // --- DODANE BŁĘDY RESTRICT/GUARDRAILS ---
+    #[error("Obiekt {0} jest używany i nie może zostać usunięty: {1}")]
+    InUse(String, String),
 }

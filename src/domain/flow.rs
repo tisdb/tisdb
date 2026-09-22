@@ -1,4 +1,5 @@
 use crate::domain::id::{FlowId, HyperconnectorId, ZoneId};
+use crate::domain::metadata::EntityHeader;
 use rkyv::{Archive, Deserialize, Serialize};
 use serde::{Deserialize as SerdeDeserialize, Serialize as SerdeSerialize};
 
@@ -24,15 +25,16 @@ pub enum FlowType {
 }
 
 #[derive(
-    Archive, Serialize, Deserialize, SerdeSerialize, SerdeDeserialize, Debug, Clone, PartialEq, Eq,
+    Archive, Serialize, Deserialize, SerdeSerialize, SerdeDeserialize, Debug, Clone, PartialEq,
 )]
-#[rkyv(derive(Debug, PartialEq, Eq))]
+#[rkyv(derive(Debug, PartialEq))]
 pub struct Flow {
     id: FlowId,
     parent_hyper: HyperconnectorId,
     source_zone: ZoneId,
     target_zone: ZoneId,
     flow_type: FlowType,
+    pub header: EntityHeader,
 }
 
 impl Flow {
@@ -41,6 +43,7 @@ impl Flow {
         source_zone: ZoneId,
         target_zone: ZoneId,
         flow_type: FlowType,
+        class_path: Vec<String>,
     ) -> Self {
         Self {
             id: FlowId::new(),
@@ -48,6 +51,7 @@ impl Flow {
             source_zone,
             target_zone,
             flow_type,
+            header: EntityHeader::new(class_path),
         }
     }
 

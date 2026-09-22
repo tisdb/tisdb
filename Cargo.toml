@@ -1,12 +1,36 @@
 [package]
 name = "tisdb"
 version = "0.1.0-dev.1"
+authors = ["Jan Roman Cisowski „j-Cis” <code@cisowscy.com>"]
+license = "MIT OR Apache-2.0"
 edition = "2024"
-rust-version = "1.96.0"
+rust-version = "1.98.0"
+repository = "https://github.com/tisdb/tisdb"
 resolver = "3"
+
+
+[package.metadata.cargo]
+edition = "2024"
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+targets = [
+    "x86_64-pc-windows-msvc",
+    "i686-pc-windows-msvc",
+    "x86_64-unknown-linux-gnu",
+    "x86_64-unknown-linux-musl",
+    "i686-unknown-linux-gnu",
+    "x86_64-apple-darwin",
+    "aarch64-apple-darwin"
+]
 
 [lib]
 crate-type = ["cdylib", "rlib"]
+
+[badges]
+travis-ci = { repository = "tisdb/tisdb" }
+appveyor = { repository = "tisdb/tisdb" }
 
 [dependencies]
 fslock = "0.2.1"

@@ -1,3 +1,4 @@
+// src/storage/memory.rs
 use crate::error::CoreError;
 use crate::storage::backend::StorageBackend;
 
@@ -30,17 +31,9 @@ impl StorageBackend for MemoryStorage {
         Ok(self.data[start..end].to_vec())
     }
 
-    fn write_bytes(&mut self, offset: u64, bytes: &[u8]) -> Result<(), CoreError> {
-        let start = offset as usize;
-        let end = start + bytes.len();
-        if end > self.data.len() {
-            self.data.resize(end, 0);
-        }
-        self.data[start..end].copy_from_slice(bytes);
-        Ok(())
-    }
-
-    fn flush(&mut self) -> Result<(), CoreError> {
+    fn atomic_write_snapshot(&mut self, payload: &[u8]) -> Result<(), CoreError> {
+        // W pamięci RAM "atomowa" podmiana to po prostu nadpisanie wektora sklonowanymi bajtami
+        self.data = payload.to_vec();
         Ok(())
     }
 

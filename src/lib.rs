@@ -4,12 +4,14 @@ pub mod domain {
     pub mod flow;
     pub mod hyper;
     pub mod id;
+    pub mod metadata;
     pub mod node;
     pub mod zone;
 
     pub use flow::{Flow, FlowType};
     pub use hyper::Hyperconnector;
     pub use id::{EntityId, FlowId, HyperconnectorId, NodeId, ZoneId};
+    pub use metadata::{AttributeValue, EntityHeader, ScalarValue, TextFormat};
     pub use node::Node;
     pub use zone::Zone;
 }

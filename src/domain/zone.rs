@@ -1,23 +1,26 @@
 use crate::domain::id::{EntityId, HyperconnectorId, ZoneId};
+use crate::domain::metadata::EntityHeader;
 use rkyv::{Archive, Deserialize, Serialize};
 use serde::{Deserialize as SerdeDeserialize, Serialize as SerdeSerialize};
 
 #[derive(
-    Archive, Serialize, Deserialize, SerdeSerialize, SerdeDeserialize, Debug, Clone, PartialEq, Eq,
+    Archive, Serialize, Deserialize, SerdeSerialize, SerdeDeserialize, Debug, Clone, PartialEq,
 )]
-#[rkyv(derive(Debug, PartialEq, Eq))]
+#[rkyv(derive(Debug, PartialEq))]
 pub struct Zone {
     id: ZoneId,
     parent_hyper: HyperconnectorId,
     contained_entities: Vec<EntityId>,
+    pub header: EntityHeader,
 }
 
 impl Zone {
-    pub fn new(parent_hyper: HyperconnectorId) -> Self {
+    pub fn new(parent_hyper: HyperconnectorId, class_path: Vec<String>) -> Self {
         Self {
             id: ZoneId::new(),
             parent_hyper,
             contained_entities: Vec::new(),
+            header: EntityHeader::new(class_path),
         }
     }
 
