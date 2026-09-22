@@ -8,6 +8,14 @@ Wprowadzam koncepcje "Grafów Cisowskiego" - są nadrzędnym meta-modelem (nadzb
 
 ![Diagram](docs/images/GRAFY_CISOWSKIEGO.png)
 
+---
+
+- Autor koncepcji: [Jan Cisowski](https://orcid.org/0009-0009-2907-3792)  
+- Model „Hiperkonektory Cisowskiego” jest oryginalną koncepcją teoretyczną, stanowiącą nadrzędny meta-model nad klasycznymi grafami i hipergrafami.  
+- Wszystkie prawa zastrzeżone. Rozpowszechnianie, kopiowanie lub wykorzystanie fragmentów koncepcji wymaga zgody autora.
+- 
+---
+
 1. Klasyczny graf skierowany $\Big(\Phi\Big)$
 
    - **Tradycyjne ujęcie:** Bezpośrednia relacja binarna $1:1$ łącząca dwa wierzchołki $\Big(u \to v\Big)$. Krawędź jest jedynie „płaskim” połączeniem pozbawionym własnej struktury wewnętrznej.
