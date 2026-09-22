@@ -116,7 +116,7 @@ Kolejnym kluczowym krokiem rozwojowym, dla którego fundamentem jest obecna arch
 ```toml
 [package]
 name = "tisdb"
-version = "0.0.1-dev.1"
+version = "0.0.1-dev.2"
 authors = ["Jan Roman Cisowski „j-Cis” <code@cisowscy.com>"]
 license = "MIT OR Apache-2.0"
 edition = "2024"
