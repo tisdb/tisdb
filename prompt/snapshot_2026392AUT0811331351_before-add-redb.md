@@ -1,4 +1,4 @@
-# CODE SNAPSHOT v:2026391AUT2255501359
+# CODE SNAPSHOT v:2026392AUT0811331351
 
 ## Metadata
 
@@ -6,39 +6,38 @@
 ├─ Katalog roboczy (CWD): A:/A-JAN/WIN-DOCS/REPO_OWN_RUST/GIT_tisdb/tisdb
 ├─ Lokalizacje (scan_at): ["./"]
 └─ Wzorce (match_pattern): ["./{examples|tests|docs|src}/**", "./{Cargo.toml|README.md}"]
-📦 Zeskanowano fizycznie: 2012 plików, 371 katalogów
+📦 Zeskanowano fizycznie: 400 plików, 118 katalogów
 ```
 
 ## Structure
 
 ```plaintext
-  ▣─┬ tisdb                             [473.2 KiB]                      A:/A-JAN/WIN-DOCS/REPO_OWN_RUST/GIT 
+  ▣─┬ tisdb                             [459.7 KiB]                      A:/A-JAN/WIN-DOCS/REPO_OWN_RUST/GIT 
     │                                                                    _tisdb/tisdb/                       
- 1  ├──• Cargo.toml                     [    389 B] [2026-39-1 22:12:50] ./Cargo.toml                        
-    ├──┬ docs                           [432.9 KiB] [2026-38-6 06:25:20] ./docs/                             
- 2  │  ├──• CONCEPT.md                  [ 15.1 KiB] [2026-38-6 06:27:36] ./docs/CONCEPT.md                   
-    │  └──┬ images                      [417.7 KiB] [2026-38-5 19:23:50] ./docs/images/                      
-    │     └──• GRAFY_CISOWSKIEGO.png    [417.7 KiB] [2026-38-5 19:23:50] ./docs/images/GRAFY_CISOWSKIEGO.png 
-    ├──┬ src                            [ 30.7 KiB] [2026-38-5 20:14:42] ./src/                              
- 3  │  ├──• engine.rs                   [ 12.9 KiB] [2026-39-1 22:54:56] ./src/engine.rs                     
- 4  │  ├──• error.rs                    [  1.1 KiB] [2026-39-1 22:33:50] ./src/error.rs                      
- 5  │  ├──• lib.rs                      [    770 B] [2026-39-1 21:54:27] ./src/lib.rs                        
-    │  ├──┬ domain                      [ 11.6 KiB] [2026-39-1 21:50:02] ./src/domain/                       
- 6  │  │  ├──• flow.rs                  [  1.8 KiB] [2026-39-1 21:54:01] ./src/domain/flow.rs                
- 7  │  │  ├──• hyper.rs                 [  2.0 KiB] [2026-39-1 21:52:34] ./src/domain/hyper.rs               
- 8  │  │  ├──• id.rs                    [  1.9 KiB] [2026-37-3 13:41:25] ./src/domain/id.rs                  
- 9  │  │  ├──• metadata.rs              [  3.6 KiB] [2026-39-1 22:48:17] ./src/domain/metadata.rs            
-10  │  │  ├──• node.rs                  [    701 B] [2026-39-1 21:52:19] ./src/domain/node.rs                
-11  │  │  └──• zone.rs                  [  1.5 KiB] [2026-39-1 21:53:46] ./src/domain/zone.rs                
-    │  └──┬ storage                     [  4.4 KiB] [2026-38-5 20:14:42] ./src/storage/                      
-12  │     ├──• backend.rs               [    587 B] [2026-39-1 22:30:48] ./src/storage/backend.rs            
-13  │     ├──• file.rs                  [  2.4 KiB] [2026-39-1 22:31:15] ./src/storage/file.rs               
-14  │     └──• memory.rs                [  1.4 KiB] [2026-39-1 22:31:35] ./src/storage/memory.rs             
-    └──┬ tests                          [  9.3 KiB] [2026-39-1 21:56:07] ./tests/                            
-15     ├──• axiom_tests.rs              [  1.9 KiB] [2026-39-1 21:55:27] ./tests/axiom_tests.rs              
-16     ├──• metadata_tests.rs           [  1.1 KiB] [2026-39-1 21:56:23] ./tests/metadata_tests.rs           
-17     ├──• persistence_tests.rs        [  4.6 KiB] [2026-39-1 22:49:39] ./tests/persistence_tests.rs        
-18     └──• storage_tests.rs            [  1.6 KiB] [2026-39-1 22:50:01] ./tests/storage_tests.rs            
+ 1  ├──• Cargo.toml                     [   1018 B] [2026-39-2 07:58:03] ./Cargo.toml                        
+    ├──┬ docs                           [417.7 KiB] [2026-39-2 07:45:33] ./docs/                             
+    │  └──┬ images                      [417.7 KiB] [2026-39-2 07:45:33] ./docs/images/                      
+    │     └──• GRAFY_CISOWSKIEGO.png    [417.7 KiB] [2026-39-2 07:45:33] ./docs/images/GRAFY_CISOWSKIEGO.png 
+    ├──┬ src                            [ 31.7 KiB] [2026-39-2 07:47:10] ./src/                              
+ 2  │  ├──• engine.rs                   [ 12.8 KiB] [2026-39-1 23:08:51] ./src/engine.rs                     
+ 3  │  ├──• error.rs                    [  1.1 KiB] [2026-39-1 22:33:50] ./src/error.rs                      
+ 4  │  ├──• lib.rs                      [    770 B] [2026-39-1 21:54:27] ./src/lib.rs                        
+    │  ├──┬ domain                      [ 11.6 KiB] [2026-39-2 07:47:10] ./src/domain/                       
+ 5  │  │  ├──• flow.rs                  [  1.8 KiB] [2026-39-1 21:54:01] ./src/domain/flow.rs                
+ 6  │  │  ├──• hyper.rs                 [  2.0 KiB] [2026-39-1 21:52:34] ./src/domain/hyper.rs               
+ 7  │  │  ├──• id.rs                    [  1.9 KiB] [2026-37-3 13:41:25] ./src/domain/id.rs                  
+ 8  │  │  ├──• metadata.rs              [  3.6 KiB] [2026-39-1 22:48:17] ./src/domain/metadata.rs            
+ 9  │  │  ├──• node.rs                  [    701 B] [2026-39-1 21:52:19] ./src/domain/node.rs                
+10  │  │  └──• zone.rs                  [  1.5 KiB] [2026-39-1 21:53:46] ./src/domain/zone.rs                
+    │  └──┬ storage                     [  5.4 KiB] [2026-39-2 07:47:10] ./src/storage/                      
+11  │     ├──• backend.rs               [    610 B] [2026-39-1 23:07:07] ./src/storage/backend.rs            
+12  │     ├──• file.rs                  [  3.7 KiB] [2026-39-1 23:07:44] ./src/storage/file.rs               
+13  │     └──• memory.rs                [  1.1 KiB] [2026-39-1 23:08:08] ./src/storage/memory.rs             
+    └──┬ tests                          [  9.3 KiB] [2026-39-2 07:47:10] ./tests/                            
+14     ├──• axiom_tests.rs              [  1.9 KiB] [2026-39-1 21:55:27] ./tests/axiom_tests.rs              
+15     ├──• metadata_tests.rs           [  1.1 KiB] [2026-39-1 21:56:23] ./tests/metadata_tests.rs           
+16     ├──• persistence_tests.rs        [  4.6 KiB] [2026-39-1 22:49:39] ./tests/persistence_tests.rs        
+17     └──• storage_tests.rs            [  1.6 KiB] [2026-39-1 22:50:01] ./tests/storage_tests.rs            
 ```
 
 ## Source Code Content
@@ -49,12 +48,36 @@
 [package]
 name = "tisdb"
 version = "0.1.0-dev.1"
+authors = ["Jan Roman Cisowski „j-Cis” <code@cisowscy.com>"]
+license = "MIT OR Apache-2.0"
 edition = "2024"
 rust-version = "1.98.0"
+repository = "https://github.com/tisdb/tisdb"
 resolver = "3"
+
+
+[package.metadata.cargo]
+edition = "2024"
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+targets = [
+    "x86_64-pc-windows-msvc",
+    "i686-pc-windows-msvc",
+    "x86_64-unknown-linux-gnu",
+    "x86_64-unknown-linux-musl",
+    "i686-unknown-linux-gnu",
+    "x86_64-apple-darwin",
+    "aarch64-apple-darwin"
+]
 
 [lib]
 crate-type = ["cdylib", "rlib"]
+
+[badges]
+travis-ci = { repository = "tisdb/tisdb" }
+appveyor = { repository = "tisdb/tisdb" }
 
 [dependencies]
 fslock = "0.2.1"
@@ -70,204 +93,7 @@ wasm-bindgen = ["dep:wasm-bindgen"]
 
 ```
 
-### [2] `./docs/CONCEPT.md`
-
-```markdown
-# Cisowski's Hyperconnector Model (Hiperkonektory Cisowskiego / Grafy Cisowskiego)
-
-Wprowadzam koncepcje "Grafów Cisowskiego" - są nadrzędnym meta-modelem (nadzbiorem), klasyczne teorie grafów i hipergrafów to jedynie jego zubożone podstruktury.
-
-![Diagram](images/GRAFY_CISOWSKIEGO.png)
-
-1. Klasyczny graf skierowany $\Big(\Phi\Big)$
-
-   - **Tradycyjne ujęcie:** Bezpośrednia relacja binarna $1:1$ łącząca dwa wierzchołki $\Big(u \to v\Big)$. Krawędź jest jedynie „płaskim” połączeniem pozbawionym własnej struktury wewnętrznej.
-
-   - **Redukcja w Meta-Modelu:**  Hiperkonektor zredukowany do dwóch jednoelementowych stref portowych $\Big(z_e^{(1)}$ zawiera $u$, $z_e^{(2)}$ zawiera $v\Big)$ powiązanych pojedynczą instancją przepływu skierowanego $\Big(\pi_F(f_e) = (z_e^{(1)}, z_e^{(2)}, \mathrm{dir})\Big)$.
-
-2. Klasyczny hipergraf Berge’a $\Big(\Phi_{\mathrm{hyper}}\Big)$
-
-   - **Tradycyjne ujęcie:** Płaski podzbiór wierzchołków $\Big(e \subseteq V\Big)$. Wszystkie elementy w krawędzi są równorzędne — brak tam jakichkolwiek wyróżnionych ról, portów czy struktury wewnętrznej.
-
-   - **Redukcja w Meta-Modelu:** Skrajnie uproszczony hiperkonektor całkowicie pozbawiony wewnętrznej dynamiki relacyjnej $\Big(\vert{}F_{h_e}\vert{} = 0\Big)$, posiadający zaledwie jedną strefę portową $\Big(z_e\Big)$, której funkcja zawartości przechowuje pełny zbiór wierzchołków $\Big(\mu_Z(z_e) = \Phi_{\mathrm{hyper}}(e)\Big)$.
-
-3. Klasyczny skierowany hipergraf $\Big(\Phi_{\mathrm{dir\_hyper}}\Big)$
-
-   - **Tradycyjne ujęcie:** Relacja wieloargumentowa łącząca podzbiór wejściowy (Tail) z podzbiorem wyjściowym (Head) w formule $T \to H$.
-
-   - **Redukcja w Meta-Modelu:** Hiperkonektor posiadający dokładnie dwie strefy interfejsowe $\Big(z_e^{\mathrm{tail}}$ oraz $z_e^{\mathrm{head}}\Big)$, z których każda agreguje odpowiedni podzbiór wierzchołków, spięte jednym wewnętrznym przepływem skierowanym między tymi portami.
-
-4. Metagrafy / Grafy hierarchiczne
-
-   - **Tradycyjne ujęcie:** Umożliwiają łączenie całych podgrafów lub krawędzi z innymi krawędziami, jednak często cierpią na brak twardej izolacji (połączenia skrośne przeskakują poziomy zagnieżdżenia).
-
-   - **Redukcja w Meta-Modelu:** Pełna, inżynieryjna enkapsulacja. Dowolna strefa może zawierać inne hiperkonektory $\Big(\mu_Z(z) \subseteq U\Big)$, tworząc ufundowaną strukturę zagnieżdżoną $\Big(\mathcal{R}_{\mathrm{contain}}\Big)$, w której jakikolwiek ruch skrośny jest ściśle kontrolowany przez dedykowane porty $\Big(Z_h\Big)$ i lokalne przepływy $\Big(F_h\Big)$.
-
-## Słownik Ontologiczny
-
-### ♦️ Węzły ($N$ – Nodes / Atoms)
-
-- Podstawowe, niepodzielne obiekty lub jednostki danych, które nie posiadają żadnej struktury wewnętrznej ani portów.
-
-- Atomy ontologiczne. Byty pozbawione wewnętrznej struktury topologicznej ($\vert{}Z_n\vert{}$ nie istnieje). Stanowią podstawowe jednostki danych lub obiekty niepodzielne w uniwersum.
-
-### ♣️ Hiperkonektory / Hiperkrawędzie ($H$ – Hyperconnectors / Relational Complexes)
-
-- Autonomiczne kontenery relacji, które posiadają własną tożsamość, własne porty (strefy) oraz wewnętrzne połączenia (przepływy).
-
-- Autonomiczne byty relacyjne posiadające własną tożsamość oraz przypisaną strukturę wewnętrzną $(Z_h, F_h)$. Użycie terminu hiperkrawędź w niniejszym formalizmie ma charakter rozszerzający i należy je rozumieć w sensie hiperkonektora (kompleksu portowego). W przeciwieństwie do klasycznej hiperkrawędzi Berge’a (będącej jedynie płaskim podbiorem wierzchołków), $H$ definiuje lokalny kontekst topologiczny posiadający własne porty (strefy) oraz wewnętrzną dynamikę (przepływy).
-
-### ♥️ Strefy ($Z$ – Zones / Ports)
-
-- Dyskretne punkty styku wewnątrz hiperkonektora. Pełnią podwójną rolę: są portami dla wewnętrznych przepływów oraz kontenerami na obiekty ($N$ i $H$). Ten sam obiekt z uniwersum (zarówno węzeł, jak i inny zagnieżdżony hiperkonektor) może znajdować się w zawartości wielu stref naraz.
-
-- Dyskretne elementy strukturalne stanowiące punkty styku (porty / role / interfejsy) danej hiperkrawędzi. Strefa $z \in Z_h$ nie jest zbiorem, lecz instancją portu o unikalnej tożsamości globalnej ($z_1 \neq z_2$). Pełni podwójną rolę: interfejsu relacyjnego (dla funkcji $\pi_F$) oraz kontenera zawartości (dla funkcji $\mu_Z(z) \subseteq U$). Zawartość stref ($\mu_Z$), obejmująca węzły $N$ oraz hiperkonektory $H$, może być współdzielona.
-
-### ♠️ Przepływy ($F$ – Flows / Relational Instances)
-
-- Autonomiczne połączenia relacyjne zachodzące wyłącznie pomiędzy strefami należącymi do tego samego hiperkonektora.
-
-- Autonomiczne instancje relacji zachodzące wyłącznie pomiędzy strefami należącymi do tej samej hiperkrawędzi ($Z_h \times Z_h$). Przepływ $f \in F_h$ nie jest zbiorem par, lecz unikalnym obiektem wskazywanym przez funkcję przydziału $\pi_F$, niosącym atomowy typ orientacji $T = \{\mathrm{sym}, \mathrm{dir}, \mathrm{bidir}\}$.
-
-## Aksjomaty Systemu
-
-### ♦️ Aksjomat 1 (Ontologia Węzłów)
-
-- W systemie istnieją węzły ($N$), które są prostymi, niepodzielnymi elementami (atomami) bez portów czy struktury wewnętrznej.
-
-- Istnieje zbiór węzłów $N$, których elementy są ontologicznymi atomami pozbawionymi struktury portowej.
-
-### ♣️ Aksjomat 2 (Ontologia Hiperkonektorów)
-
-- W systemie istnieją hiperkonektory ($H$), które są całkowicie odrębne od węzłów ($N$). Razem z węzłami tworzą pełne uniwersum obiektów ($U$).
-
-- Istnieje zbiór hiperkonektorów $H$. Zbiory $N$ oraz $H$ są rozłączne i tworzą uniwersum obiektów:
-   $U = N \sqcup H \quad \mathrm{gdzie} \quad N \cap H = \emptyset$ .
-
-### ♥️ Aksjomat 3 (Lokalność i Rozłączność Stref)
-
-- Każdy hiperkonektor ma swój własny, unikalny zestaw stref (portów). Jedna strefa nie może należeć do dwóch hiperkonektorów naraz.
-
-- Każdemu hiperkonektorowi $h \in H$ przypisana jest lokalna rodzina stref $Z_h$. Strefy należące do różnych hiperkonektorów są ściśle rozłączne:
-   $\forall h_1, h_2 \in H \quad (h_1 \neq h_2 \implies Z_{h_1} \cap Z_{h_2} = \emptyset)$ .
-
-### ♥️ Aksjomat 4 (Globalne Uniwersum Stref)
-
-- Wszystkie strefy w całym systemie tworzą łączną przestrzeń $Z$. Strefa nie może istnieć „luzem” poza swoim hiperkonektorem.
-
-- Globalną przestrzeń stref $Z$ definiuje się jako sumę rozłączną rodzin lokalnych:
-   $$Z = \bigsqcup_{h \in H} Z_h$$
-   Strefy nie istnieją jako samodzielne byty poza swoim hiperkonektorem macierzystym.
-
-### ♠️ Aksjomat 5 (Lokalność i Rozłączność Przepływów)
-
-- Przepływy są w 100% lokalne – dany przepływ należy ściśle do swojego hiperkonektora i nie może bezpośrednio wychodzić poza niego.
-
-- Każdemu hiperkonektorowi $h \in H$ przypisana jest lokalna rodzina instancji przepływów $F_h$. Przepływy należące do różnych hiperkonektorów są ściśle rozłączne:
-   $$\forall h_1, h_2 \in H \quad (h_1 \neq h_2 \implies F_{h_1} \cap F_{h_2} = \emptyset)$$
-
-### ♠️ Aksjomat 6 (Globalne Uniwersum Przepływów)
-
-- Cała przestrzeń przepływów w systemie ($F$) składa się wyłącznie z połączeń zdefiniowanych w poszczególnych hiperkonektorach.
-
-- Globalną przestrzeń przepływów $F$ definiuje się jako sumę rozłączną rodzin lokalnych:
-   $$F = \bigsqcup_{h \in H} F_h$$
-   Przepływy nie istnieją jako samodzielne byty poza swoim hiperkonektorem macierzystym.
-
-### ♣️ Aksjomat 7 (Odwzorowanie Struktury Hiperkonektora)
-
-- Każdy hiperkonektor ma przypisaną strukturę złożoną ze stref i przepływów. Może posiadać zero stref (byt bezportowy) lub zero przepływów.
-
-- Struktura dowolnego hiperkonektora $h \in H$ jest określona przez funkcję przydziału:
-   $$\sigma: H \to \mathcal{P}(Z) \times \mathcal{P}(F) \quad \mathrm{gdzie} \quad \sigma(h) = (Z_h, F_h)$$
-   Dopuszczalne są liczności $\vert{}Z_h\vert{} \ge 0$ oraz $\vert{}F_h\vert{} \ge 0$. Stan $\vert{}Z_h\vert{} = 0$ definiuje byt bezportowy (placeholder).
-
-### ♥️ Aksjomat 8 (Zawartość Stref i Współdzielenie Zawartości)
-
-- Strefa może być pusta lub zawierać w sobie dowolne węzły ($N$) oraz zagnieżdżone hiperkonektory ($H$). Ten sam obiekt z uniwersum $U$ (dowolny węzeł lub inny hiperkonektor) może znajdować się jednocześnie w zawartości wielu różnych stref..
-
-- Zawartość każdej strefy $z \in Z$ opisuje funkcja:
-   $$\mu_Z: Z \to \mathcal{P}(U)$$
-   Strefa może być pusta ($\mu_Z(z) = \emptyset$) lub zawierać dowolny podzbiór węzłów $N$ i/lub hiperkonektorów $H$. Obrazy funkcji $\mu_Z$ dla różnych stref nie muszą być rozłączne — dozwolone jest współdzielenie obiektów z uniwersum $U = N \sqcup H$ przez odrębne strefy.
-
-### ♥️ Aksjomat 9 (Relacja Zagnieżdżenia i Aksjomat Ufundowania)
-
-- Hiperkonektory mogą zawierać w swoich strefach inne hiperkonektory, tworząc strukturę zagnieżdżoną. Zagnieżdżanie nie może jednak tworzyć cykli (samozawierania) ani nieskończonej głębokości.
-
-- Relację bezpośredniego zagnieżdżenia $\mathcal{R}_{\mathrm{contain}} \subseteq U \times U$ definiuje się jako:
-   $$(h, u) \in \mathcal{R}_{\mathrm{contain}} \iff h \in H \land \exists z \in Z_h \bigl(u \in \mu_Z(z)\bigr)$$
-   Relacja $\mathcal{R}_{\mathrm{contain}}$ jest dobrze ufundowana (well-founded), co wyklucza istnienie nieskończonych łańcuchów zagnieżdżenia $u_0 \ni u_1 \ni u_2 \dots$. Ponadto jej domknięcie przechodnie $\mathcal{R}_{\mathrm{contain}}^+$ jest ściśle irrefleksywne:
-   $$\forall u \in U \quad (u, u) \notin \mathcal{R}_{\mathrm{contain}}^+$$
-
-### ♠️ Aksjomat 10 (Instancja i Typowanie Przepływu)
-
-- Każdy przepływ wewnątrz hiperkonektora łączy dwie jego strefy i posiada jeden z trzech typów połączenia: nieskierowane (—), skierowane (⟶) lub dwukierunkowe (⟷).
-
-- Każda instancja przepływu $f \in F_h$ jest odwzorowywana przez funkcję przydziału:
-   $$\pi_F: F_h \to Z_h \times Z_h \times T \quad \mathrm{gdzie} \quad T = \{\mathrm{sym}, \mathrm{dir}, \mathrm{bidir}\}$$
-
-### ♠️ Aksjomat 11 (Symetria Reprezentacji i Auto-Przepływy)
-
-- Przy połączeniu nieskierowanym (—) lub dwukierunkowym (⟷) kolejność podania stref nie ma znaczenia. Mimo tej samej symetrii portowej, (—) oznacza powiązanie statyczne (np. styk), a (⟷) aktywny kanał dwukierunkowy (f⟷). Przepływ może również łączyć strefę z samą sobą (auto-przepływ).
-
-- Dla typów orientacji $t \in \{\mathrm{sym}, \mathrm{bidir}\}$ zachodzi symetria reprezentacji krotki modulo relacja równoważności $\equiv$:
-   $$(z_1, z_2, t) \equiv (z_2, z_1, t)$$
-   Dla $t = \mathrm{dir}$ kolejność argumentów w parze jest asymetryczna. Dozwolone są auto-przepływy, gdzie $z_1 = z_2$.
-
-> ℹ️ Uwaga dotycząca semantyki typów: Relacja $\equiv$ określa wyłącznie symetrię podłączenia do portów $Z_h \times Z_h$. Typy sym i bidir stanowią jednak rozłączne elementy zbioru $T$: typ sym reprezentuje statyczną relację nieskierowaną (np. styk/potencjał), natomiast bidir reprezentuje atomowy, aktywny kanał dwukierunkowy ($f_{\leftrightarrow}$), którego pełna dwustronna dynamika jest interpretowana w Warstwie Semantycznej ($\mathcal{S}$).
-
-### ♠️ Aksjomat 12 (Multigrafowość Warstwy Relacyjnej)
-
-- Między tymi samymi dwiema strefami w tym samym hiperkonektorze może istnieć wiele niezależnych, równoległych przepływów tego samego typu.
-
-- Funkcja $\pi_F$ nie musi być iniekcją. Dwa odrębne obiekty przepływu $f_1, f_2 \in F_h$ ($f_1 \neq f_2$) mogą posiadać identyczny obraz $\pi_F(f_1) = \pi_F(f_2)$, co tworzy strukturę multigrafu.
-
-## Definicje Zanurzenia
-
-### 📖 Definicja Kanonicznego Zanurzenia Iniekcyjnego ($\Phi$) (Klasycznej Krawędzi w Grafie)
-
-- Klasyczna krawędź grafu (np. $A \to B$) jest po prostu szczególnym przypadkiem hiperkonektora, który posiada dwie odrębne strefy (zawierające odpowiednio $A$ i $B$) oraz jeden przepływ skierowany między nimi.
-
-- Dowolny klasyczny graf skierowany $G = (V, E)$, gdzie $E \subseteq V \times V$, jest reprezentowalny w meta-modelu poprzez kanoniczne zanurzenie iniekcyjne:
-   
-   $$\Phi: V \sqcup E \hookrightarrow U, \quad \mathrm{gdzie} \quad \Phi(V) \subseteq N \quad \mathrm{oraz} \quad \Phi(E) \subseteq H$$
-   
-   Dla każdej krawędzi $e = (u, v) \in E$ niech $h_e = \Phi(e) \in H$. Hiperkonektor $h_e$ posiada strukturę $\sigma(h_e) = (\{z_e^{(1)}, z_e^{(2)}\}, \{f_e\})$, gdzie $z_e^{(1)} \neq z_e^{(2)}$, i spełnia warunki:
-   
-   $$\mu_Z(z_e^{(1)}) = \{\Phi(u)\}, \quad \mu_Z(z_e^{(2)}) = \{\Phi(v)\}, \quad \pi_F(f_e) = (z_e^{(1)}, z_e^{(2)}, \mathrm{dir})$$
-
-### 📖 Definicja Zanurzenia Klasycznej Hiperkrawędzi ($\Phi_{\mathrm{hyper}}$)
-
-- Klasyczna nieskierowana hiperkrawędź Berge’a (worek/zbiór wierzchołków) jest po prostu szczególnym przypadkiem hiperkonektora, który posiada jedną strefę (zawierającą ten zbiór wierzchołków) oraz brak jakichkolwiek wewnętrznych przepływów.
-
-- Dowolny klasyczny hipergraf Berge’a $\mathcal{H} = (V, E)$, gdzie $e \subseteq V$ dla każdego $e \in E$, jest reprezentowalny w meta-modelu poprzez kanoniczne zanurzenie iniekcyjne:
-   
-   $$\Phi_{\mathrm{hyper}}: V \sqcup E \hookrightarrow U, \quad \mathrm{gdzie} \quad \Phi_{\mathrm{hyper}}(V) \subseteq N \quad \mathrm{oraz} \quad \Phi_{\mathrm{hyper}}(E) \subseteq H$$
-   
-   Dla każdej hiperkrawędzi $e \in E$ niech $h_e = \Phi_{\mathrm{hyper}}(e) \in H$. Hiperkonektor $h_e$ posiada strukturę $\sigma(h_e) = (\{z_e\}, \emptyset)$ (brak przepływów, $\vert{}F_{h_e}\vert{} = 0$) i spełnia warunek:
-   
-   $$\mu_Z(z_e) = \{\Phi_{\mathrm{hyper}}(v) \mid v \in e\}$$
-
-### 📖 Definicja Zanurzenia Klasycznej Skierowanej Hiperkrawędzi ($\Phi_{\mathrm{dir\_hyper}}$)
-
-- Klasyczna skierowana hiperkrawędź (łącząca zbiór wejściowy ze zbiorem wyjściowym) jest szczególnym przypadkiem hiperkonektora, który posiada dwie odrębne strefy (zawierające odpowiednio wierzchołki źródłowe i docelowe) oraz jeden przepływ skierowany między tymi strefami.
-
-- Dowolny klasyczny skierowany hipergraf $\mathcal{H}_{\mathrm{dir}} = (V, E_{\mathrm{dir}})$, gdzie każda krawędź jest parą zbiorów $e = (T_e, H_e)$ dla $T_e, H_e \subseteq V$ (zbiór wejściowy Tail i wyjściowy Head), jest reprezentowalny w meta-modelu poprzez kanoniczne zanurzenie iniekcyjne:
-   
-   $$\Phi_{\mathrm{dir\_hyper}}: V \sqcup E_{\mathrm{dir}} \hookrightarrow U, \quad \mathrm{gdzie} \quad \Phi_{\mathrm{dir\_hyper}}(V) \subseteq N \quad \mathrm{oraz} \quad \Phi_{\mathrm{dir\_hyper}}(E_{\mathrm{dir}}) \subseteq H$$
-   
-   Dla każdej skierowanej hiperkrawędzi $e = (T_e, H_e) \in E_{\mathrm{dir}}$ niech $h_e = \Phi_{\mathrm{dir\_hyper}}(e) \in H$. Hiperkonektor $h_e$ posiada strukturę $\sigma(h_e) = (\{z_e^{\mathrm{tail}}, z_e^{\mathrm{head}}\}, \{f_e\})$, gdzie $z_e^{\mathrm{tail}} \neq z_e^{\mathrm{head}}$, i spełnia warunki:
-   
-   $$\mu_Z(z_e^{\mathrm{tail}}) = \{\Phi_{\mathrm{dir\_hyper}}(v) \mid v \in T_e\}, \quad \mu_Z(z_e^{\mathrm{head}}) = \{\Phi_{\mathrm{dir\_hyper}}(v) \mid v \in H_e\}$$
-   
-   $$\pi_F(f_e) = (z_e^{\mathrm{tail}}, z_e^{\mathrm{head}}, \mathrm{dir})$$
-
----
----
-
-```
-
-### [3] `./src/domain/flow.rs`
+### [2] `./src/domain/flow.rs`
 
 ```rust
 use crate::domain::id::{FlowId, HyperconnectorId, ZoneId};
@@ -350,7 +176,7 @@ impl Flow {
 }
 ```
 
-### [4] `./src/domain/hyper.rs`
+### [3] `./src/domain/hyper.rs`
 
 ```rust
 // src/domain/hyper.rs
@@ -429,7 +255,7 @@ impl Hyperconnector {
 }
 ```
 
-### [5] `./src/domain/id.rs`
+### [4] `./src/domain/id.rs`
 
 ```rust
 use rkyv::{Archive, Deserialize, Serialize};
@@ -515,7 +341,7 @@ pub enum EntityId {
 }
 ```
 
-### [6] `./src/domain/metadata.rs`
+### [5] `./src/domain/metadata.rs`
 
 ```rust
 use std::collections::HashMap;
@@ -641,7 +467,7 @@ impl EntityHeader {
 }
 ```
 
-### [7] `./src/domain/node.rs`
+### [6] `./src/domain/node.rs`
 
 ```rust
 // src/domain/node.rs
@@ -674,7 +500,7 @@ impl Node {
 }
 ```
 
-### [8] `./src/domain/zone.rs`
+### [7] `./src/domain/zone.rs`
 
 ```rust
 use crate::domain::id::{EntityId, HyperconnectorId, ZoneId};
@@ -735,9 +561,10 @@ impl Zone {
 }
 ```
 
-### [9] `./src/engine.rs`
+### [8] `./src/engine.rs`
 
 ```rust
+// src/engine.rs
 use std::collections::{HashMap, HashSet};
 
 use crate::domain::{
@@ -1069,9 +896,9 @@ impl<S: StorageBackend> CisowskiEngine<S> {
         payload.extend_from_slice(b"CDB1");
         payload.extend_from_slice(&bytes);
         
-        self.storage.truncate(payload.len() as u64)?;
-        self.storage.write_bytes(0, &payload)?;
-        self.storage.flush()?;
+        // Zastąpiliśmy stare write_bytes i truncate jednym, bezpiecznym poleceniem
+        self.storage.atomic_write_snapshot(&payload)?;
+        
         Ok(())
     }
 
@@ -1095,7 +922,6 @@ impl<S: StorageBackend> CisowskiEngine<S> {
             ));
         }
 
-        // ZMIANA: Dodano jawną stałą <16> definiującą Alignment pamięci.
         let mut archive_bytes = AlignedVec::<16>::new();
         archive_bytes.extend_from_slice(&file_bytes[4..]);
         
@@ -1118,7 +944,7 @@ impl<S: StorageBackend> CisowskiEngine<S> {
 }
 ```
 
-### [10] `./src/error.rs`
+### [9] `./src/error.rs`
 
 ```rust
 use thiserror::Error;
@@ -1153,7 +979,7 @@ pub enum CoreError {
 }
 ```
 
-### [11] `./src/lib.rs`
+### [10] `./src/lib.rs`
 
 ```rust
 pub mod error;
@@ -1193,20 +1019,21 @@ pub use error::CoreError;
 pub use storage::*;
 ```
 
-### [12] `./src/storage/backend.rs`
+### [11] `./src/storage/backend.rs`
 
 ```rust
 // src/storage/backend.rs
 use crate::error::CoreError;
 
 pub trait StorageBackend {
+    /// Czyta bajty z trwałego nośnika
     fn read_bytes(&self, offset: u64, len: usize) -> Result<Vec<u8>, CoreError>;
-    fn write_bytes(&mut self, offset: u64, bytes: &[u8]) -> Result<(), CoreError>;
     
-    /// Przycinanie pliku do podanej długości. Niezbędne przy nadpisywaniu mniejszą bazą.
-    fn truncate(&mut self, len: u64) -> Result<(), CoreError>;
+    /// Wykonuje w pełni atomowy zapis całego zrzutu pamięci.
+    /// Jeśli operacja się nie powiedzie, stary stan bazy pozostaje nietknięty.
+    fn atomic_write_snapshot(&mut self, payload: &[u8]) -> Result<(), CoreError>;
     
-    fn flush(&mut self) -> Result<(), CoreError>;
+    /// Zwraca wielkość obecnego zrzutu
     fn len(&self) -> u64;
 
     #[inline]
@@ -1216,12 +1043,13 @@ pub trait StorageBackend {
 }
 ```
 
-### [13] `./src/storage/file.rs`
+### [12] `./src/storage/file.rs`
 
 ```rust
+// src/storage/file.rs
 use std::fs::{File, OpenOptions};
 use std::io::{Read, Seek, SeekFrom, Write};
-use std::path::Path;
+use std::path::{Path, PathBuf};
 
 use fslock::LockFile;
 
@@ -1229,13 +1057,16 @@ use crate::error::CoreError;
 use crate::storage::backend::StorageBackend;
 
 pub struct FileStorage {
-    file: File,
+    path: PathBuf,
+    file: Option<File>, // Opcjonalny, aby można było go bezpiecznie zamknąć przy podmianie pliku na Windowsie
     _lock: LockFile,
 }
 
 impl FileStorage {
     pub fn open<P: AsRef<Path>>(path: P) -> Result<Self, CoreError> {
-        let lock_path = path.as_ref().with_extension("cdb.lock");
+        let db_path = path.as_ref().to_path_buf();
+        let lock_path = db_path.with_extension("cdb.lock");
+        
         let mut lock = LockFile::open(&lock_path)
             .map_err(|e| CoreError::StorageError(format!("Nie można utworzyć pliku blokady: {e}")))?;
 
@@ -1253,16 +1084,22 @@ impl FileStorage {
             .write(true)
             .create(true)
             .truncate(false)
-            .open(path)
+            .open(&db_path)
             .map_err(|e| CoreError::StorageError(format!("Błąd otwarcia pliku bazy: {e}")))?;
 
-        Ok(Self { file, _lock: lock })
+        Ok(Self { 
+            path: db_path, 
+            file: Some(file), 
+            _lock: lock 
+        })
     }
 }
 
 impl StorageBackend for FileStorage {
     fn read_bytes(&self, offset: u64, len: usize) -> Result<Vec<u8>, CoreError> {
-        let mut file = &self.file;
+        let mut file = self.file.as_ref()
+            .ok_or_else(|| CoreError::StorageError("Uchwyt pliku jest zamknięty".into()))?;
+            
         file.seek(SeekFrom::Start(offset))
             .map_err(|e| CoreError::StorageError(e.to_string()))?;
 
@@ -1273,37 +1110,57 @@ impl StorageBackend for FileStorage {
         Ok(buffer)
     }
 
-    fn write_bytes(&mut self, offset: u64, bytes: &[u8]) -> Result<(), CoreError> {
-        self.file
-            .seek(SeekFrom::Start(offset))
-            .map_err(|e| CoreError::StorageError(e.to_string()))?;
+    fn atomic_write_snapshot(&mut self, payload: &[u8]) -> Result<(), CoreError> {
+        let temp_path = self.path.with_extension("cdb.tmp");
 
-        self.file
-            .write_all(bytes)
-            .map_err(|e| CoreError::StorageError(e.to_string()))?;
+        // 1. Otwórz tymczasowy plik i zapisz dane
+        let mut temp_file = OpenOptions::new()
+            .write(true)
+            .create(true)
+            .truncate(true)
+            .open(&temp_path)
+            .map_err(|e| CoreError::StorageError(format!("Błąd tworzenia pliku tmp: {e}")))?;
+
+        temp_file.write_all(payload)
+            .map_err(|e| CoreError::StorageError(format!("Błąd zapisu do pliku tmp: {e}")))?;
+            
+        // 2. Wymuś zrzut z buforów OS fizycznie na dysk
+        temp_file.sync_all()
+            .map_err(|e| CoreError::StorageError(format!("Błąd synchronizacji I/O dysku: {e}")))?;
+
+        // 3. Zamknij stary uchwyt (niezbędne na Windowsie przed zrobieniem atomowego rename)
+        self.file = None;
+
+        // 4. Atomowa podmiana pliku (na platformach POSIX i nowoczesnym NTFS)
+        std::fs::rename(&temp_path, &self.path)
+            .map_err(|e| CoreError::StorageError(format!("Błąd atomowej podmiany pliku bazy: {e}")))?;
+
+        // 5. Otwórz nowy plik i przypisz do struktury aby przywrócić możliwość czytania
+        let new_file = OpenOptions::new()
+            .read(true)
+            .write(true)
+            .open(&self.path)
+            .map_err(|e| CoreError::StorageError(format!("Błąd ponownego otwarcia zaktualizowanego pliku: {e}")))?;
+
+        self.file = Some(new_file);
 
         Ok(())
     }
-    
-    fn truncate(&mut self, len: u64) -> Result<(), CoreError> {
-        self.file.set_len(len).map_err(|e| CoreError::StorageError(e.to_string()))
-    }
-
-    fn flush(&mut self) -> Result<(), CoreError> {
-        self.file
-            .sync_all()
-            .map_err(|e| CoreError::StorageError(e.to_string()))
-    }
 
     fn len(&self) -> u64 {
-        self.file.metadata().map(|m| m.len()).unwrap_or(0)
+        if let Some(f) = &self.file {
+            f.metadata().map(|m| m.len()).unwrap_or(0)
+        } else {
+            0
+        }
     }
 }
 ```
 
-### [14] `./src/storage/memory.rs`
+### [13] `./src/storage/memory.rs`
 
 ```rust
+// src/storage/memory.rs
 use crate::error::CoreError;
 use crate::storage::backend::StorageBackend;
 
@@ -1336,22 +1193,9 @@ impl StorageBackend for MemoryStorage {
         Ok(self.data[start..end].to_vec())
     }
 
-    fn write_bytes(&mut self, offset: u64, bytes: &[u8]) -> Result<(), CoreError> {
-        let start = offset as usize;
-        let end = start + bytes.len();
-        if end > self.data.len() {
-            self.data.resize(end, 0);
-        }
-        self.data[start..end].copy_from_slice(bytes);
-        Ok(())
-    }
-    
-    fn truncate(&mut self, len: u64) -> Result<(), CoreError> {
-        self.data.truncate(len as usize);
-        Ok(())
-    }
-
-    fn flush(&mut self) -> Result<(), CoreError> {
+    fn atomic_write_snapshot(&mut self, payload: &[u8]) -> Result<(), CoreError> {
+        // W pamięci RAM "atomowa" podmiana to po prostu nadpisanie wektora sklonowanymi bajtami
+        self.data = payload.to_vec();
         Ok(())
     }
 
@@ -1361,7 +1205,7 @@ impl StorageBackend for MemoryStorage {
 }
 ```
 
-### [15] `./tests/axiom_tests.rs`
+### [14] `./tests/axiom_tests.rs`
 
 ```rust
 use tisdb::{CisowskiEngine, CoreError, EntityId, FlowType, MemoryStorage};
@@ -1425,7 +1269,7 @@ fn test_axiom_10_flow_boundaries() {
 }
 ```
 
-### [16] `./tests/metadata_tests.rs`
+### [15] `./tests/metadata_tests.rs`
 
 ```rust
 use tisdb::{AttributeValue, CisowskiEngine, MemoryStorage};
@@ -1458,7 +1302,7 @@ fn test_metadata_attributes_lifecycle() {
 }
 ```
 
-### [17] `./tests/persistence_tests.rs`
+### [16] `./tests/persistence_tests.rs`
 
 ```rust
 use std::fs;
@@ -1600,7 +1444,7 @@ fn test_attributes_persistence_hashmap() {
 }
 ```
 
-### [18] `./tests/storage_tests.rs`
+### [17] `./tests/storage_tests.rs`
 
 ```rust
 use std::fs::{self, OpenOptions};
@@ -1663,33 +1507,32 @@ fn test_broken_header() {
 ## End Structure Summary
 
 ```plaintext
-  ▣─┬ tisdb                             [473.2 KiB]                      A:/A-JAN/WIN-DOCS/REPO_OWN_RUST/GIT 
+  ▣─┬ tisdb                             [459.7 KiB]                      A:/A-JAN/WIN-DOCS/REPO_OWN_RUST/GIT 
     │                                                                    _tisdb/tisdb/                       
- 1  ├──• Cargo.toml                     [    389 B] [2026-39-1 22:12:50] ./Cargo.toml                        
-    ├──┬ docs                           [432.9 KiB] [2026-38-6 06:25:20] ./docs/                             
- 2  │  ├──• CONCEPT.md                  [ 15.1 KiB] [2026-38-6 06:27:36] ./docs/CONCEPT.md                   
-    │  └──┬ images                      [417.7 KiB] [2026-38-5 19:23:50] ./docs/images/                      
-    │     └──• GRAFY_CISOWSKIEGO.png    [417.7 KiB] [2026-38-5 19:23:50] ./docs/images/GRAFY_CISOWSKIEGO.png 
-    ├──┬ src                            [ 30.7 KiB] [2026-38-5 20:14:42] ./src/                              
- 3  │  ├──• engine.rs                   [ 12.9 KiB] [2026-39-1 22:54:56] ./src/engine.rs                     
- 4  │  ├──• error.rs                    [  1.1 KiB] [2026-39-1 22:33:50] ./src/error.rs                      
- 5  │  ├──• lib.rs                      [    770 B] [2026-39-1 21:54:27] ./src/lib.rs                        
-    │  ├──┬ domain                      [ 11.6 KiB] [2026-39-1 21:50:02] ./src/domain/                       
- 6  │  │  ├──• flow.rs                  [  1.8 KiB] [2026-39-1 21:54:01] ./src/domain/flow.rs                
- 7  │  │  ├──• hyper.rs                 [  2.0 KiB] [2026-39-1 21:52:34] ./src/domain/hyper.rs               
- 8  │  │  ├──• id.rs                    [  1.9 KiB] [2026-37-3 13:41:25] ./src/domain/id.rs                  
- 9  │  │  ├──• metadata.rs              [  3.6 KiB] [2026-39-1 22:48:17] ./src/domain/metadata.rs            
-10  │  │  ├──• node.rs                  [    701 B] [2026-39-1 21:52:19] ./src/domain/node.rs                
-11  │  │  └──• zone.rs                  [  1.5 KiB] [2026-39-1 21:53:46] ./src/domain/zone.rs                
-    │  └──┬ storage                     [  4.4 KiB] [2026-38-5 20:14:42] ./src/storage/                      
-12  │     ├──• backend.rs               [    587 B] [2026-39-1 22:30:48] ./src/storage/backend.rs            
-13  │     ├──• file.rs                  [  2.4 KiB] [2026-39-1 22:31:15] ./src/storage/file.rs               
-14  │     └──• memory.rs                [  1.4 KiB] [2026-39-1 22:31:35] ./src/storage/memory.rs             
-    └──┬ tests                          [  9.3 KiB] [2026-39-1 21:56:07] ./tests/                            
-15     ├──• axiom_tests.rs              [  1.9 KiB] [2026-39-1 21:55:27] ./tests/axiom_tests.rs              
-16     ├──• metadata_tests.rs           [  1.1 KiB] [2026-39-1 21:56:23] ./tests/metadata_tests.rs           
-17     ├──• persistence_tests.rs        [  4.6 KiB] [2026-39-1 22:49:39] ./tests/persistence_tests.rs        
-18     └──• storage_tests.rs            [  1.6 KiB] [2026-39-1 22:50:01] ./tests/storage_tests.rs            
+ 1  ├──• Cargo.toml                     [   1018 B] [2026-39-2 07:58:03] ./Cargo.toml                        
+    ├──┬ docs                           [417.7 KiB] [2026-39-2 07:45:33] ./docs/                             
+    │  └──┬ images                      [417.7 KiB] [2026-39-2 07:45:33] ./docs/images/                      
+    │     └──• GRAFY_CISOWSKIEGO.png    [417.7 KiB] [2026-39-2 07:45:33] ./docs/images/GRAFY_CISOWSKIEGO.png 
+    ├──┬ src                            [ 31.7 KiB] [2026-39-2 07:47:10] ./src/                              
+ 2  │  ├──• engine.rs                   [ 12.8 KiB] [2026-39-1 23:08:51] ./src/engine.rs                     
+ 3  │  ├──• error.rs                    [  1.1 KiB] [2026-39-1 22:33:50] ./src/error.rs                      
+ 4  │  ├──• lib.rs                      [    770 B] [2026-39-1 21:54:27] ./src/lib.rs                        
+    │  ├──┬ domain                      [ 11.6 KiB] [2026-39-2 07:47:10] ./src/domain/                       
+ 5  │  │  ├──• flow.rs                  [  1.8 KiB] [2026-39-1 21:54:01] ./src/domain/flow.rs                
+ 6  │  │  ├──• hyper.rs                 [  2.0 KiB] [2026-39-1 21:52:34] ./src/domain/hyper.rs               
+ 7  │  │  ├──• id.rs                    [  1.9 KiB] [2026-37-3 13:41:25] ./src/domain/id.rs                  
+ 8  │  │  ├──• metadata.rs              [  3.6 KiB] [2026-39-1 22:48:17] ./src/domain/metadata.rs            
+ 9  │  │  ├──• node.rs                  [    701 B] [2026-39-1 21:52:19] ./src/domain/node.rs                
+10  │  │  └──• zone.rs                  [  1.5 KiB] [2026-39-1 21:53:46] ./src/domain/zone.rs                
+    │  └──┬ storage                     [  5.4 KiB] [2026-39-2 07:47:10] ./src/storage/                      
+11  │     ├──• backend.rs               [    610 B] [2026-39-1 23:07:07] ./src/storage/backend.rs            
+12  │     ├──• file.rs                  [  3.7 KiB] [2026-39-1 23:07:44] ./src/storage/file.rs               
+13  │     └──• memory.rs                [  1.1 KiB] [2026-39-1 23:08:08] ./src/storage/memory.rs             
+    └──┬ tests                          [  9.3 KiB] [2026-39-2 07:47:10] ./tests/                            
+14     ├──• axiom_tests.rs              [  1.9 KiB] [2026-39-1 21:55:27] ./tests/axiom_tests.rs              
+15     ├──• metadata_tests.rs           [  1.1 KiB] [2026-39-1 21:56:23] ./tests/metadata_tests.rs           
+16     ├──• persistence_tests.rs        [  4.6 KiB] [2026-39-1 22:49:39] ./tests/persistence_tests.rs        
+17     └──• storage_tests.rs            [  1.6 KiB] [2026-39-1 22:50:01] ./tests/storage_tests.rs            
 ```
 
 ---
